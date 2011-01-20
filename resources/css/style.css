@@ -158,6 +158,16 @@ margin-left:9px;
 align:left;
 }
 
+#navmenu a {
+/* TODO: change to "black" */
+color:black;
+}
+
+#navmenu a:hover {
+color:#e50053;
+border:0;
+}
+
 .posts {
 margin-top:2px #eee solid;
 }
