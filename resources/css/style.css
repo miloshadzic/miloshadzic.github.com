@@ -154,8 +154,13 @@ float:left;
 margin-left:9px;
 }
 
-#name {
+#name a{
 align:left;
+color:black;
+}
+#name a:hover{
+color:#e50053;
+border:0;
 }
 
 #navmenu a {
