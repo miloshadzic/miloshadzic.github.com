@@ -66,9 +66,6 @@ a img { border: none; }
 /* Remember to define your own focus styles! */
 :focus { outline: 0; }
 
-/*
-*/
-
 #main {
 -moz-font-feature-settings:"onum=1, pnum=1, liga=1";
 font-size:18px;
@@ -159,4 +156,8 @@ margin-left:9px;
 
 #name {
 align:left;
+}
+
+.posts {
+margin-top:2px #eee solid;
 }
