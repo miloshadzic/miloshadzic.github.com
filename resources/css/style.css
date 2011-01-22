@@ -56,7 +56,9 @@ li {margin: 0 0 0 2em;}
 dd {padding-left: 1.5em;}
 blockquote {padding: 0 1.5em;}
 
-a {color:#e50053; text-decoration: none;}
+a {color:#e50053; text-decoration: none; 
+border-color:#fcfcfb; 
+-moz-transition:border-color 0.3s ease; -webkit-transition:border-color 0.3s ease; transition:border-color 0.3s ease;}
 a:hover {border-bottom:2px #e50053 dotted;}
 abbr,acronym {border-bottom: 1px dotted; cursor: help;}
 del {text-decoration: line-through;}
@@ -124,7 +126,8 @@ border-bottom: 4px #eee solid;
 #navmenu {float:right; list-style:none; margin:0}
 #navmenu>li {float:left; margin-left:1em;}
 
-#header a {color:#000000;border:0}
+#header a {color:#000000;border:0;
+-moz-transition:color 0.3s ease; -webkit-transition:color 0.3s ease; transition:color 0.3 ease;}
 
 #header a:hover {color:#e50053;}
 
