@@ -147,6 +147,13 @@ margin-bottom:1em;
 padding:0 0.5em 0 0.5em;
 }
 
+.smcp {
+-moz-font-feature-settings:"smcp=1";
+}
+
+/* footer */
+#footer {
+margin-bottom:2em;
 /* grid for testing
 body{
 background:url('/resources/images/grid.png');
