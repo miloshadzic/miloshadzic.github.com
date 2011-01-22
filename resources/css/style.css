@@ -66,7 +66,13 @@ ins {text-decoration: overline;}
 sub {font-size: .834em; line-height: 1em; vertical-align: sub;}
 sup {font-size: .834em; line-height: 1em; vertical-align: super;}
 
+/* Code style, also check out syntax.css for colors */
+@font-face {
+font-family:Inconsolata;
+src:local("Inconsolata"), url(/resources/fonts/Inconsolata.otf) format("opentype");
+}
 tt,code,kbd,samp,pre {font-size: 1em; font-family: "inconsolata","Courier New", Courier, monospace;}
+.inconsolata {font-family:"Inconsolata", "Consolas", monospace;}
 
 /* Table styles */
 table {border-collapse: collapse; border-spacing: 0; margin: 0 0 0;}
