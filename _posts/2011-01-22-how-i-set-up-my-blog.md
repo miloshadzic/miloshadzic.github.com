@@ -45,4 +45,4 @@ If you have comments of any kind, I would be glad to hear from you.
 [jb]: <http://www.josbuivenga.demon.nl/index.html>
 [typekit]: <http://www.typekit.com>
 [i]:<http://www.levien.com/type/myfonts/inconsolata.html>
-[1]: <https://github.com/miloshadzic/miloshadzic.com>
+[1]: <https://github.com/miloshadzic/miloshadzic.github.com>
