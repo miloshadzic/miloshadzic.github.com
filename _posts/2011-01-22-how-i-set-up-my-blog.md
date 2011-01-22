@@ -13,11 +13,11 @@ use [Jekyll][].
 Preston-Werner(of [GitHub][] fame). You create a set of templates and
 then just write your posts in plain text using your
 markup of choice(I use [Markdown][]). Jekyll then transforms everything
-into static HTML that you can be served by pretty much anything you like.
+into static HTML that can be served by pretty much anything you like.
 
 The nice thing about everything being plain text is that I can use
 Emacs to write posts. It has a very nice markdown-mode. I use [Git][]
-to push  everything into a [GitHub][] repository so I backup both my
+to push everything into a [GitHub][] repository so I backup both my
 code *and* my content. You are free to browse everything [here][1]
 
 ## Design
