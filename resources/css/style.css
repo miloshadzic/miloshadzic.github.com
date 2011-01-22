@@ -139,12 +139,12 @@ list-style:none;
 }
 
 table {
-width: 100%;
+
 margin-bottom:1em;
 }
 
-.dates {
-width:5em;
+.arrows {
+padding:0 0.5em 0 0.5em;
 }
 
 /* grid for testing
