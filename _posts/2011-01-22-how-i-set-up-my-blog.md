@@ -34,7 +34,7 @@ If you're using Firefox 4, you can see some advanced
 typographical features such as small caps and ligatures turned on here
 and there.
 
-If you have comments of any kind, I would love to hear them.
+If you have comments of any kind, I would be glad to hear from you.
 
 [Jekyll]: <https://github.com/mojombo/jekyll>
 [Markdown]: <http://daringfireball.net/projects/markdown/>
