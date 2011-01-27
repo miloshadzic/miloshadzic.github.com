@@ -47,7 +47,8 @@ h4 {margin: 0 0 1.5em; font-size: 1em;}
 h5 {margin: 0 0 1.8em; font-size: .834em;}
 h6 {margin: 0 0 2em; font-size: .75em;}
 
-p,ul,ol,dl,blockquote,pre {font-family:Georgia;margin: 0 0 1.5em;}
+p,ul,ol,dl,blockquote,pre {margin: 0 0 1.5em;}
+p {font-family:Georgia, serif;}
 
 li ul,li ol {margin: 0;}
 ul {list-style: outside circle;}
