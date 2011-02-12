@@ -25,8 +25,8 @@ blockquote:before,blockquote:after,q:before,q:after {content: ''; content: none;
 header, nav, section, article, aside, footer {display: block;}
 
 /* Basic styles */
-body {background: #fff; color: #333333; font: .75em/1.5em "calluna-sans-1", "calluna-sans-2", "corbel", "sans-serif";}
-html>body {font-size: 16px;}
+body {background: #fff; color: #333333; font: .75em/1.5em "serif";}
+html>body {font-size: 14px;}
 
 img {display: inline-block; vertical-align: bottom;}
 
@@ -72,8 +72,8 @@ sup {font-size: .834em; line-height: 1em; vertical-align: super;}
 font-family:Inconsolata;
 src:local("Inconsolata"), url(/resources/fonts/Inconsolata.otf) format("opentype");
 }
-tt,code,kbd,samp,pre {font-size: 1em; font-family: "inconsolata","Courier New", Courier, monospace;}
-.inconsolata {font-family:"Inconsolata", "Consolas", monospace;}
+tt,code,kbd,samp,pre {font-size: 1em; font-family: "monaco", "inconsolata","Courier New", Courier, monospace;}
+.inconsolata {font-family: "monaco", "Inconsolata", "Consolas", monospace;}
 
 /* Table styles */
 table {border-collapse: collapse; border-spacing: 0; margin: 0 0 0;}
@@ -115,7 +115,7 @@ img.left {display: inline; float: left; margin: 0 1.5em .75em 0;}
 img.right {display: inline; float: right; margin: 0 0 .75em .75em;}
 
 #main {
-max-width:37em;
+max-width:32em;
 margin:0 auto;
 }
 
