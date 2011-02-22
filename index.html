@@ -2,9 +2,12 @@
 layout: default
 title: Home
 ---
+<div id="post">
 <h1>{{ site.posts.first.title }}</h1>
 <h4 id="date">Posted on {{ site.posts.first.date | date: "%B %d, %Y" }}.</h4>
 {{ site.posts.first.content }}
+</div>
+<!--
 <table>
 {% for post in site.posts %}
 <tr>
@@ -12,3 +15,4 @@ title: Home
 </tr>
 {% endfor %}
 </table>
+>
