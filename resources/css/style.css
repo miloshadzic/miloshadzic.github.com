@@ -86,3 +86,12 @@ p{margin-bottom:0.75em;}
 #name {font-weight:bold; font-size:14px;}
 #header a {color:#444; border:0; -moz-transition:color 0.3s ease-in;}
 #header a:hover {color:#1693a7; border:0;}
+
+/* Blog post list */
+#posts {margin:1em 0 0 10em;}
+#posts td {padding-right:0.5em;}
+#posts a {color: #444; border:0; 
+-moz-transition:color 0.3s ease-in;
+-webkit-transition:color 0.3s ease-in;
+font-weight:bold}
+#posts a:hover {color: #1693a7; border:0}
