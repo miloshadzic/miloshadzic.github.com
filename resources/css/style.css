@@ -72,17 +72,16 @@ h4 {font-size:1em;}
 h5 {font-size:0.75em;}
 h6 {font-size:0.5em;}
 
-#date { font-family:georgia; font-style:italic; color:#aaa; font-weight:normal}
+.date { font-family:Constantia, Georgia, 'URW Palladio L', serif; color:#666; font-weight:normal; margin-bottom:1em; margin-top:-1em;}
 
 a { text-decoration:none; color:#1693a7; border-bottom:2px white dotted; -moz-transition:border-bottom 0.3s ease-in;}
 a:hover {border-bottom:2px #1693a7 dotted;}
 
 /* Here be the layout code */
 #post{ margin-left:10.5em; max-width:35em;}
-#header {float:left; margin-left: 1em; padding:1em 1em 1em 0;  border-right:4px #eee solid;}
+#header {float:left; margin-left: 1em; padding:1em 1em 0.5em 0;  border-right:4px #eee solid;}
 
 p{margin-bottom:0.75em;}
-#date { margin-top:-0.5em; margin-bottom:0.75em;}
 
 #name {font-weight:bold; font-size:14px;}
 #header a {color:#444; border:0; -moz-transition:color 0.3s ease-in;}
