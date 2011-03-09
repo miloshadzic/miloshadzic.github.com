@@ -88,7 +88,7 @@ p{margin-bottom:0.75em;}
 #header a:hover {color:#1693a7; border:0;}
 
 /* Blog post list */
-#posts {margin:1em 0 0 1em; float:left;}
+.postlist {margin:1em 0 0 2em; float:left}
 #posts td {padding-right:0.5em;}
 #posts a {color: #444; border:0; 
 -moz-transition:color 0.3s ease-in;
