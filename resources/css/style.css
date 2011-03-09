@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     font-size:14px;
-    font-family: 'Lucida Grande', 'Gill Sans', sans-serif;
+    font-family: 'Lucida Grande', 'Segoe UI', 'Droid Sans', sans-serif;
     line-height: 1.5;
     color:#444;
 }
@@ -61,7 +61,7 @@ table {
 
 }
 
-.mono, pre {font-family:Monaco, Inconsolata, Consolas, monospace;}
+.mono, pre {font-family:Monaco, Consolas, 'Droid Sans Mono', monospace;}
 pre {margin-bottom:1em;}
 
 h1,h2,h3,h4,h5,h6 { font-weight:bold;}
