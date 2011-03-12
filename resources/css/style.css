@@ -95,6 +95,7 @@ p{margin-bottom:0.75em;}
 -moz-transition:color 0.3s ease-in;
 -webkit-transition:color 0.3s ease-in;
 font-weight:bold}
+#posts a:hover {color:#1693a7;}
 
 /* Thumbnail image styling */
 .thumb {border:none;}
