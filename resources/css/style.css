@@ -65,7 +65,7 @@ table {
 pre {margin-bottom:1em;}
 
 h1,h2,h3,h4,h5,h6 { font-weight:bold;}
-h1 {font-size:4em; text-transform:uppercase; font-family:League Gothic, LeagueGothicRegular;sans-serif; font-weight:normal;}
+h1 {font-size:4em; text-transform:uppercase; font-family:League Gothic, LeagueGothicRegular;sans-serif; font-weight:normal; overflow-x:visible}
 h2 {font-size:2em; margin-bottom:0.25em;font-family:League Gothic,LeagueGothicRegular,sans-serif; font-weight:normal;}
 h3 {font-size:1.2em;}
 h4 {font-size:1em;}
@@ -78,7 +78,8 @@ a { text-decoration:none; color:#1693a7; border-bottom:2px white dotted; -moz-tr
 a:hover {border-bottom:2px #1693a7 dotted;}
 
 /* Here be the layout code */
-#post{ margin-left:10.5em; max-width:35em;}
+#postwrapper{ margin-left:10.5em;}
+#post { max-width:35em;}
 #header {float:left; margin-left: 1em; padding:1em 1em 0.5em 0;  border-right:4px #eee solid;}
 
 p{margin-bottom:0.75em;}
