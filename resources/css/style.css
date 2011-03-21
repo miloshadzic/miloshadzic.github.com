@@ -1,7 +1,7 @@
-n/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+   */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,9 +53,9 @@ table {
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('/resources/fonts/League_Gothic-webfont.eot?') format('eot'),
-         url('/resources/fonts/League_Gothic-webfont.woff') format('woff'),
-         url('/resources/fonts/League_Gothic-webfont.ttf') format('truetype'),
-         url('/resources/fonts/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
+    url('/resources/fonts/League_Gothic-webfont.woff') format('woff'),
+    url('/resources/fonts/League_Gothic-webfont.ttf') format('truetype'),
+    url('/resources/fonts/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -85,16 +85,21 @@ a:hover {border-bottom:2px #1693a7 dotted;}
 p{margin-bottom:0.75em;}
 
 #name {font-weight:bold; font-size:14px;}
-#header a {color:#444; border:0; -moz-transition:color 0.3s ease-in;}
+#header a {
+    color:#444;
+    border:0;
+    -moz-transition:color 0.3s ease-in;
+    -webkit-transition:color 0.3s ease-in;
+}
 #header a:hover {color:#1693a7; border:0;}
 
 /* Blog post list */
 .postlist {margin:1em 0 0 2em; float:left}
 #posts td {padding-right:0.5em;}
 #posts a {color: #444; border:0; 
--moz-transition:color 0.3s ease-in;
--webkit-transition:color 0.3s ease-in;
-font-weight:bold}
+          -moz-transition:color 0.3s ease-in;
+          -webkit-transition:color 0.3s ease-in;
+          font-weight:bold}
 #posts a:hover {color:#1693a7;}
 
 /* Thumbnail image styling */
