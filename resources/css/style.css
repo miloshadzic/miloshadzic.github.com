@@ -74,7 +74,9 @@ h6 {font-size:0.5em;}
 
 .date { font-family:Constantia, Georgia, 'URW Palladio L', serif; color:#666; font-weight:normal; margin-bottom:1em; margin-top:-1em;}
 
-a { text-decoration:none; color:#1693a7; border-bottom:2px white dotted; -moz-transition:border-bottom 0.3s ease-in;}
+a { text-decoration:none; color:#1693a7; border-bottom:2px white dotted;
+  -moz-transition:border-bottom 0.3s ease-in;
+  -webkit-transition:border-bottom 0.3s ease-in;}
 a:hover {border-bottom:2px #1693a7 dotted;}
 
 /* Here be the layout code */
