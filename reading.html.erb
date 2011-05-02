@@ -1,0 +1,28 @@
+---
+layout: default
+title: Reading List
+---
+<div id="postwrapper">
+<h1>Reading List</h1>
+<table class="book">
+  <colgroup>
+    <col width="80%" />
+    <col width="20%" />
+  </colgroup>
+<% 
+  require 'yaml'
+
+  list = YAML::load_file('books.yml')
+
+  for book in list do %>
+  <tr><td>
+      <a class="dslink" href="<%= book['url'] %>"><span class="title"><%= book['title'] %></span></a><br />
+      <span class="title">Author:</span> <%= book['author'] %><br />
+  <span class="title">Status:</span> <%= book['status'] %><br />
+  <span class="title">Started:</span> <%= book['start'] %><br />
+  <span class="title">Comment:</span> <%= book['comment'] %>
+  </td>
+  <td><a class="thumb" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a></td></tr>
+<% end %>
+</table>
+</div>
