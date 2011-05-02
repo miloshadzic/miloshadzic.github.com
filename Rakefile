@@ -11,3 +11,9 @@ desc 'Recreate the site and serve. Autoregeneration is ON'
 task :serve do
   `jekyll --serve --auto`
 end
+
+task :reading do
+  `erb reading.html.erb > reading.html`
+end
+
+task :serve => [:reading]

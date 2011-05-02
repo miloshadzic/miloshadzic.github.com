@@ -120,3 +120,16 @@ a.thumb:hover>img {
     -webkit-box-shadow:0px 2px 5px #ddd;
     box-shadow:0px 5px 5px #ddd;
 }
+
+.book td { vertical-align:top }
+table.book { width:100% }
+.title { font-weight:bold }
+.book td { padding-bottom:1em; }
+
+a.dslink {
+ color:#444;
+ border:0;
+-moz-transition:color 0.3s ease-in;
+-webkit-transition:color 0.3s ease-in;
+}
+a.dslink:hover {color:#1693a7; border:0;}
