@@ -1,3 +1,11 @@
+-
+   title: "Test Driven Development: By Example"
+   isbn: '0321146530'
+   url: http://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
+   author: Kent Beck
+   status: In progress
+   start: May 2011
+   comment:
 -  
    title: Eloquent Ruby
    isbn: 0321584104 
@@ -5,7 +13,7 @@
    author: Russ Olsen
    status: Finished May 2011
    start: April 2011
-   comment: Awesome book about how Ruby is actually used and how to avoid "programming Java in Ruby". It is somewhat similair to Effective Java. It took me a while to read it but it is a quick read. The perfect second Ruby book.
+   comment: Awesome book about how Ruby is actually used and how to avoid "programming Java in Ruby". It is somewhat similar to Effective Java. It took me a while to read it but it is a quick read. The perfect second Ruby book.
    
 -
    title: Agile Web Development with Rails
