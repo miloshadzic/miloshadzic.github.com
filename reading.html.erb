@@ -20,7 +20,7 @@ title: Reading List
       <span class="title">Author:</span> <%= book['author'] %><br />
   <span class="title">Status:</span> <%= book['status'] %><br />
   <span class="title">Started:</span> <%= book['start'] %><br />
-  <span class="title">Comment:</span> <%= book['comment'] %>
+  <span class="title">Comment:</span><br /> <span class="bookcomment"><%= book['comment'] %></span>
   </td>
   <td><a class="thumb" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a></td></tr>
 <% end %>
