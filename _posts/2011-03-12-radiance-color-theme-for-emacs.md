@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Radiance Color-Theme for Emacs
 ---
 
 I've created a color-theme that should integrate nicely into a desktop

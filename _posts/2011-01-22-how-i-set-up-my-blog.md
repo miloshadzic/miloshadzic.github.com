@@ -1,5 +1,6 @@
 ---
 layout: post
+title: How I set up my Blog
 ---
 
 I've decided to keep a blog to remind myself of the things I'm doing
