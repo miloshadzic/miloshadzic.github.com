@@ -2,12 +2,15 @@
 layout: default
 title: Home
 ---
-{% for post in site.posts %}
 <div id="postwrapper">
+{% for post in site.posts limit:5 %}
 <h1>{{ post.title }}</h1>
 <h4 class="date">Posted on {{ post.date | date: "%B %d,  %Y" }}.</h4>
 <div id="post">
 {{ post.content }}
 </div>
-</div>
+{% unless forloop.last %}
+<hr />
+{% endunless %}
 {% endfor %}
+</div>

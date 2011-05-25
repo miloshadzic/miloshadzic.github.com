@@ -5,6 +5,7 @@ layout: nil
 $black: #444;
 $blue: #1693a7;
 $grey: #f6f6f5;
+$orange: #FF9500;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,9 +33,9 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    font-size:14px;
+    font-size:15px;
+    line-height:22px;
     font-family: 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
-    line-height: 22.625px;
     color: $black;
     text-rendering: optimizeLegibility;
 }
@@ -54,40 +55,38 @@ table {
     border-spacing: 0;
 }
 
-@font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('/resources/fonts/League_Gothic-webfont.eot?') format('eot'),
-    url('/resources/fonts/League_Gothic-webfont.woff') format('woff'),
-    url('/resources/fonts/League_Gothic-webfont.ttf') format('truetype'),
-    url('/resources/fonts/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .mono, pre {font-family: 'Droid Sans Mono', Monaco, Consolas, 'Droid Sans Mono', monospace;}
 pre {margin-bottom:1em;}
+h1,h2,h3,h4,h5,h6 { font-weight:bold;}
 h1 {
-  font-size:32px;
-  line-height:51.776px;
-  letter-spacing:-2.043px;
-  font-weight:bold;
+  font-size:22.5px;
+  line-height:33.75px;
+  letter-spacing:-1px;
+  font-weight:normal;
   overflow-x:visible;
   text-rendering:optimizeGeometry;
 }
 h2 { 
-  font-size:19.778px;
-  line-height:51.776px;
-  margin-top:-14px;
+  color:$orange;
+  font-size:15px;
+  line-height:22.5px;
+  margin: 11.25px 0;
   text-rendering:optimizeGeometry;
-  letter-spacing:-1.103px;
+  font-weight:normal;
 }
-h1,h2,h3,h4,h5,h6 { font-weight:bold;}
+
 h3 {font-size:1.2em;}
-h4 {font-size:1em;}
+h4 {font-size:15px; line-height:22.5px;}
 h5 {font-size:0.75em;}
 h6 {font-size:0.5em;}
 
+hr {
+  margin-top:11.25px;
+  margin-bottom:11.25px;
+  border:0;
+  border-bottom: 1px $grey solid;
+  width:66.7%;
+}
 .date { color:#888; font-weight:normal;}
 
 a { text-decoration:none; color:$blue; border-bottom:2px white dotted;
@@ -96,13 +95,23 @@ a { text-decoration:none; color:$blue; border-bottom:2px white dotted;
 a:hover {border-bottom:2px $blue dotted;}
 
 /* Here be the layout code */
+#main {
+  margin: 70px auto 0;
+  max-width:960px;
+}
+
 #postwrapper{ 
-  margin:0px auto 22.305px; max-width:40em; border-bottom:3.305px $grey dotted;}
-#header {float:left; margin-left: 1em; padding:1em 1em 0.5em 0;  border-right:4px #eee solid;}
+  float:left;
+  max-width:600px;
+  margin:11.25px 10px  10px; 
+  padding-right:15px;
+  border-right:3.541px $grey dotted;
+  }
+#header {float:left; padding-left:10px; padding-top:22.5px;}
 
-p{margin-bottom:14px;}
+p {margin-top:11.25px;}
 
-#name {font-weight:bold; font-size:14px;}
+#name {font-weight:bold;}
 #header a {
     color:$black;
     border:0;
@@ -124,7 +133,7 @@ p{margin-bottom:14px;}
 .thumb {border:none;}
 a.thumb:hover {border:none}
 a.thumb>img {
-    margin-bottom:0.75em;
+    margin-top:11.25px;
     -moz-box-shadow:0px 2px 5px $grey;
     -webkit-box-shadow:0px 2px 5px $grey;
     box-shadow:0px 5px 5px $grey;
@@ -152,5 +161,10 @@ a.dslink {
 a.dslink:hover {color:$blue; border:0;}
 
 #toppaint { background:$grey;
-            padding-bottom:10px;
+            padding-bottom:9.271px;
           }
+#bottompaint {
+  display:none;
+  background: $grey;
+  padding-bottom:63.537px
+}
