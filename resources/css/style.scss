@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     font-size:14px;
     font-family: 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
-    line-height: 24px;
+    line-height: 22.625px;
     color: $black;
     text-rendering: optimizeLegibility;
 }
@@ -67,17 +67,28 @@ table {
 
 .mono, pre {font-family: 'Droid Sans Mono', Monaco, Consolas, 'Droid Sans Mono', monospace;}
 pre {margin-bottom:1em;}
-h1 { margin-top:7px;}
-h1,h2 { text-rendering:optimizeGeometry; letter-spacing:-2px;}
+h1 {
+  font-size:32px;
+  line-height:51.776px;
+  letter-spacing:-2.043px;
+  font-weight:bold;
+  overflow-x:visible;
+  text-rendering:optimizeGeometry;
+}
+h2 { 
+  font-size:19.778px;
+  line-height:51.776px;
+  margin-top:-14px;
+  text-rendering:optimizeGeometry;
+  letter-spacing:-1.103px;
+}
 h1,h2,h3,h4,h5,h6 { font-weight:bold;}
-h1 {font-size:36px; font-weight:bold; overflow-x:visible}
-h2 {font-size:2em; margin-bottom:0.25em;font-weight:normal;}
 h3 {font-size:1.2em;}
 h4 {font-size:1em;}
 h5 {font-size:0.75em;}
 h6 {font-size:0.5em;}
 
-.date { color:#666; font-weight:normal; margin-bottom:1em;}
+.date { color:#888; font-weight:normal;}
 
 a { text-decoration:none; color:$blue; border-bottom:2px white dotted;
   -moz-transition:border-bottom 0.3s ease-in;
@@ -85,11 +96,11 @@ a { text-decoration:none; color:$blue; border-bottom:2px white dotted;
 a:hover {border-bottom:2px $blue dotted;}
 
 /* Here be the layout code */
-#postwrapper{ margin-left:10.5em;}
-#post { max-width:35em;}
+#postwrapper{ 
+  margin:0px auto 22.305px; max-width:40em; border-bottom:3.305px $grey dotted;}
 #header {float:left; margin-left: 1em; padding:1em 1em 0.5em 0;  border-right:4px #eee solid;}
 
-p{margin-bottom:0.75em;}
+p{margin-bottom:14px;}
 
 #name {font-weight:bold; font-size:14px;}
 #header a {
@@ -130,7 +141,7 @@ a.thumb:hover>img {
 table.book { width:100% }
 .title { font-weight:bold }
 .book td { padding: 1em 1em 1em 0em; }
-.book tr { border-bottom:$grey 3px solid}
+.book tr { border-bottom:3.305px $grey dotted}
 
 a.dslink {
  color:$black;
