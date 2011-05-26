@@ -28,7 +28,7 @@ I write. I use [Calluna Sans][cs] served by [typekit][]. Calluna Sans
 is a very nice humanist sans-serif typeface made by [Jos
 Buivegna][jb]. You should definitely check out his other fonts. Code
 is, or rather will be, typeset in [<span
-class="inconsolata">Inconsolata</span>][i]. Everything follows a
+class="m">Inconsolata</span>][i]. Everything follows a
 vertical rhythm which I think looks very pleasing.
 
 If you're using Firefox 4, you can see some advanced
