@@ -5,6 +5,7 @@ layout: nil
 $black: #444;
 $blue: #1693a7;
 $grey: #f6f6f5;
+$lgrey: #fcfcfb;
 $orange: #FF9500;
 
 html, body, div, span, applet, object, iframe,
@@ -34,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     font-size:15px;
-    line-height:22px;
+    line-height:24.27px;
     font-family: 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
     color: $black;
     text-rendering: optimizeLegibility;
@@ -55,12 +56,13 @@ table {
     border-spacing: 0;
 }
 
-.mono, pre {font-family: 'Droid Sans Mono', Monaco, Consolas, 'Droid Sans Mono', monospace;}
+.m, .mono, pre {font-family: 'Droid Sans Mono', Monaco, Consolas, monospace; letter-spacing:-1px}
 pre {margin-bottom:1em;}
 h1,h2,h3,h4,h5,h6 { font-weight:bold;}
 h1 {
-  font-size:22.5px;
-  line-height:33.75px;
+  font-size:24.27px;
+  line-height:39.269px;
+  margin-bottom:12.135px;
   letter-spacing:-1px;
   font-weight:normal;
   overflow-x:visible;
@@ -68,24 +70,22 @@ h1 {
 }
 h2 { 
   color:$orange;
-  font-size:15px;
-  line-height:22.5px;
-  margin: 11.25px 0;
+  margin: 12.135px 0;
   text-rendering:optimizeGeometry;
   font-weight:normal;
 }
 
 h3 {font-size:1.2em;}
-h4 {font-size:15px; line-height:22.5px;}
+h4 {font-size:12.135px; margin-top:12.135px; line-height:24.27px; }
 h5 {font-size:0.75em;}
 h6 {font-size:0.5em;}
 
 hr {
-  margin-top:11.25px;
-  margin-bottom:11.25px;
+  margin-top:24.27px;
+  margin-bottom:24.27px;
   border:0;
   border-bottom: 1px $grey solid;
-  width:66.7%;
+  width:61.7%;
 }
 .date { color:#888; font-weight:normal;}
 
@@ -96,20 +96,25 @@ a:hover {border-bottom:2px $blue dotted;}
 
 /* Here be the layout code */
 #main {
-  margin: 70px auto 0;
-  max-width:960px;
+  margin: 0 auto 0;
+  max-width:720px;
 }
 
-#postwrapper{ 
+#posts { 
   float:left;
-  max-width:600px;
-  margin:11.25px 10px  10px; 
+  max-width:550px;
+  margin:12.135px 25px 0px 0px; 
   padding-right:15px;
-  border-right:3.541px $grey dotted;
+  border-right:3px $grey dotted;
   }
-#header {float:left; padding-left:10px; padding-top:22.5px;}
 
-p {margin-top:11.25px;}
+.content {
+  margin:0 0 0 0;
+}
+
+#header {float:left;padding-top:22.5px;}
+
+p {margin-top:12.135px;}
 
 #name {font-weight:bold;}
 #header a {
@@ -122,7 +127,7 @@ p {margin-top:11.25px;}
 
 /* Blog post list */
 .postlist {margin:1em 0 0 2em; float:left}
-#posts td {padding-right:0.5em;}
+#posts td {}
 #posts a {color: $black; border:0; 
           -moz-transition:color 0.3s ease-in;
           -webkit-transition:color 0.3s ease-in;
@@ -147,7 +152,7 @@ a.thumb:hover>img {
 }
 
 .book td { vertical-align:top }
-table.book { width:100% }
+table.book { width:100%;}
 .title { font-weight:bold }
 .book td { padding: 1em 1em 1em 0em; }
 .book tr { border-bottom:3.305px $grey dotted}
@@ -160,11 +165,11 @@ a.dslink {
 }
 a.dslink:hover {color:$blue; border:0;}
 
-#toppaint { background:$grey;
+#toppaint { background:$lgrey;
             padding-bottom:9.271px;
           }
 #bottompaint {
-  display:none;
+  clear:both;
   background: $grey;
-  padding-bottom:63.537px
+  padding-bottom:102.803px
 }
