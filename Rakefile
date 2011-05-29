@@ -16,4 +16,9 @@ task :reading do
   `erb reading.html.erb > reading.html`
 end
 
-task :serve => [:reading]
+task :sass do
+  `sass --update resources/sass/:resources/css/`
+end
+
+task :default => [:reading, :sass]
+task :serve => [:default]

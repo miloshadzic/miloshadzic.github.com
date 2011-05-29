@@ -25,10 +25,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   font-size: 15px;
-  line-height: 24.27px;
+  line-height: 22px;
   font-family: 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
   color: #444444;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  -moz-font-features: "onum=1,pnum=1,liga=1"; }
 
 ol, ul {
   list-style: none; }
@@ -45,13 +46,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.m, .mono, pre {
-  font-family: 'Droid Sans Mono', Monaco, Consolas, monospace;
-  letter-spacing: -1px; }
-
-pre {
-  margin-bottom: 1em; }
-
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
@@ -74,9 +69,9 @@ h3 {
   font-size: 1.2em; }
 
 h4 {
-  font-size: 12.135px;
-  margin-top: 12.135px;
-  line-height: 24.27px; }
+  font-size: 11px;
+  margin: 0;
+  font-weight: normal; }
 
 h5 {
   font-size: 0.75em; }
@@ -84,9 +79,16 @@ h5 {
 h6 {
   font-size: 0.5em; }
 
+.m, .mono, pre {
+  font-family: 'Droid Sans Mono', Monaco, Consolas, monospace;
+  letter-spacing: -1px; }
+
+pre {
+  margin-bottom: 1em; }
+
 hr {
-  margin-top: 24.27px;
-  margin-bottom: 24.27px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-bottom: 1px #f6f6f5 solid;
   width: 61.7%; }
@@ -107,14 +109,14 @@ a:hover {
 
 /* Here be the layout code */
 #main {
-  margin: 0 auto 0;
-  max-width: 720px; }
+  width: 92%;
+  margin: 0 4%; }
 
 #posts {
   float: left;
-  max-width: 550px;
-  margin: 12.135px 25px 0px 0px;
-  padding-right: 15px;
+  width: 58%;
+  margin: 26px 2% 4% 0%;
+  padding-right: 2%;
   border-right: 3px #f6f6f5 dotted; }
 
 .content {
@@ -122,12 +124,13 @@ a:hover {
 
 #header {
   float: left;
-  padding-top: 22.5px; }
+  margin-top: 15px; }
 
 p {
   margin-top: 12.135px; }
 
 #name {
+  font-size: 22px;
   font-weight: bold; }
 
 #header a {
@@ -203,8 +206,3 @@ a.dslink:hover {
 #toppaint {
   background: #fcfcfb;
   padding-bottom: 9.271px; }
-
-#bottompaint {
-  clear: both;
-  background: #f6f6f5;
-  padding-bottom: 102.803px; }
