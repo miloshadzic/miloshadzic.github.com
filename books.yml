@@ -3,9 +3,9 @@
    isbn: '0321146530'
    url: http://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
    author: Kent Beck
-   status: In progress
+   status: Finished June 2011
    start: May 2011
-   comment:
+   comment: This is a nice book for people who would like an introduction to TDD. That said, I thought that it could have been replaced by two screencasts and a book of about 50 pages. It has a lot of "filler" material which is a bit annoying. I think I expected a bit more but overall it's an interesting read.
 -  
    title: Eloquent Ruby
    isbn: 0321584104 
