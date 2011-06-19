@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
+  background: white;
   font-size: 15px;
   line-height: 22px;
   font-family: 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
