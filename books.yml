@@ -1,4 +1,28 @@
 -
+   title: "The RSpec Book"
+   isbn: '1934356379'
+   url: http://amzn.com/1934356379
+   author: David Chelimsky, Dave Astels, Bryan Helmkamp, Dan North, Zach Dennis, Aslak Heliesoy
+   status: In progress
+   start: June 2011
+   comment:
+-
+   title: "Ruby on Rails 3 Tutorial: Learn Rails by Example"
+   isbn: '03217453121'
+   url: http://amzn.com/0321743121
+   author: Michael Hartl
+   status: In progress 
+   start: June 2011
+   comment:
+-
+   title: "Notes on the Synthesis of Form" 
+   isbn: '9780674627512'
+   url: http://amzn.com/0674627512
+   author: Christopher Alexander
+   status: Finished June 2011
+   start: June 2011
+   comment:
+-
    title: "Test Driven Development: By Example"
    isbn: '0321146530'
    url: http://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
@@ -20,6 +44,6 @@
    url: http://www.amazon.com/Agile-Development-Rails-Pragmatic-Programmers/dp/1934356549/
    isbn: 1934356549
    author: Sam Ruby, Dave Thomas, David Heinemeier Hansson
-   status: In progress
+   status: On hold
    start: April 2011
    comment: 
