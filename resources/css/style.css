@@ -56,6 +56,15 @@ table {
   border-spacing: 0; }
 
 /* Typography */
+.bold {
+  font-weight: 700; }
+
+.heavy {
+  font-weight: 800; }
+
+.italic {
+  font-style: italic; }
+
 p {
   font-size: 1em;
   line-height: 1.6em;
@@ -98,7 +107,7 @@ h6 {
   font-size: 15px;
   line-height: 1.6em;
   margin-bottom: 1.6em;
-  font-family: Consolas,Inconsolata,Consolas, monospace;
+  font-family: Consolas,Inconsolata,Monaco,monospace;
   letter-spacing: -1px;
   overflow: auto; }
 
@@ -116,6 +125,7 @@ hr {
 
 .date {
   color: #888;
+  font-size: 13px;
   font-weight: normal;
   line-height: 1.6em;
   margin-bottom: 1.6em; }
@@ -136,12 +146,24 @@ li {
   line-height: 1.6em; }
 
 /* Here be the layout code */
+.floatright {
+  float: right;
+  max-width: 100px; }
+
+.book {
+  min-height: 9.6em;
+  margin-bottom: 1.6em; }
+
+.bookcomment {
+  max-width: 31em;
+  text-align: justify; }
+
 .content {
   margin: 0 0 0 0; }
 
 #header {
   width: 43em;
-  height: 4em;
+  height: 3.2em;
   margin: 0 auto 24px auto; }
 
 #header ul {
@@ -179,10 +201,12 @@ li {
   padding: 6px;
   padding-top: 1em;
   -moz-transition-property: padding,margin, -moz-box-shadow;
-  -moz-transition: 0.2s ease; }
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition-property: padding,margin, -moz-box-shadow;
+  -webkit-transition: 0.2s ease-in-out; }
 
 #name:hover {
-  -webkit-box-shadow: -2px 2px 3px #eeeeee;
+  -webkit-box-shadow: 0 12px 0px #444444;
   -moz-box-shadow: 0 12px 0px #444444; }
 
 /* Blog post list */
@@ -229,28 +253,3 @@ a.thumb > img {
   margin-top: -12px;
   margin-bottom: 12px;
   display: block; }
-
-.book td {
-  vertical-align: top; }
-
-table.book {
-  width: 100%; }
-
-.title {
-  font-weight: bold; }
-
-.book td {
-  padding: 1em 1em 1em 0em; }
-
-.book tr {
-  border-bottom: 3.305px #f6f6f5 dotted; }
-
-a.dslink {
-  color: #444444;
-  border: 0;
-  -moz-transition: color 0.3s ease-in;
-  -webkit-transition: color 0.3s ease-in; }
-
-a.dslink:hover {
-  color: #1693a7;
-  border: 0; }

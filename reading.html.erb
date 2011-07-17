@@ -3,26 +3,43 @@ layout: default
 title: Reading List
 ---
 <div id="posts">
-<h1>Reading List</h1>
-<table class="book">
-  <colgroup>
-    <col width="80%" />
-    <col width="20%" />
-  </colgroup>
-<% 
-  require 'yaml'
+  <h1>Reading List</h1>
+  <% 
+      require 'yaml'
 
   list = YAML::load_file('books.yml')
+  reading = []
+  read = []
 
-  for book in list do %>
-  <tr><td>
-      <a class="dslink" href="<%= book['url'] %>"><span class="title"><%= book['title'] %></span></a><br />
-      <span class="title">Author:</span> <%= book['author'] %><br />
-  <span class="title">Status:</span> <%= book['status'] %><br />
-  <span class="title">Started:</span> <%= book['start'] %><br />
-  <span class="title">Comment:</span><br /> <span class="bookcomment"><%= book['comment'] %></span>
-  </td>
-  <td><a class="thumb" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a></td></tr>
+  for book in list do 
+    book['comment'] = book['comment'].to_s.split('\n') || book['comment']
+
+    if book['status'] == "In progress"
+      reading << book
+    else
+      read << book
+    end
+
+    book['date'] = "#{book['start'].split[0..1].join(" ")} - #{book['status'].split[1..2].join(" ")}" unless book['status'] == "In progress"
+  end
+  %>
+<% for book in reading %>
+<div class="book">
+  <a class="thumb img floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
+  <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
+  <span class="italic"><%= book['author'] %><br /></span>
+
+  <p class="date"><%= book['date'] %></p>
+</div>
 <% end %>
-</table>
+<% for book in read %>
+<div class="book">
+  <a class="thumb img floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
+  <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
+  <span class="italic"><%= book['author'] %><br /></span>
+
+  <p class="date"><%= book['date'] %></p>
+  <% for p in book['comment'] do %> <p class="bookcomment"><%= p %></span><% end %>
+</div>
+<% end %>
 </div>

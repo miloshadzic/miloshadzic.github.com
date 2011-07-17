@@ -1,49 +1,54 @@
 -
-   title: "The RSpec Book"
-   isbn: '1934356379'
-   url: http://amzn.com/1934356379
-   author: David Chelimsky, Dave Astels, Bryan Helmkamp, Dan North, Zach Dennis, Aslak Heliesoy
-   status: In progress
-   start: June 2011
-   comment:
+  title: "The RSpec Book"
+  isbn: '1934356379'
+  url: http://amzn.com/1934356379
+  author: David Chelimsky, Dave Astels, Bryan Helmkamp, Dan North, Zach Dennis, Aslak Heliesoy
+  status: In progress
+  start: June 2011
+  comment: >
+    I've heard about this book but never really considered reading it because I thought that I don't need a book about one testing tool.
+    It took me 10 pages to realise that this book really should have been named The BDD Book. The first part covers the BDD cycle and how it differs from TDD. The rest of it is about RSpec and Cucumber.
 -
-   title: "Ruby on Rails 3 Tutorial: Learn Rails by Example"
-   isbn: '03217453121'
-   url: http://amzn.com/0321743121
-   author: Michael Hartl
-   status: In progress 
-   start: June 2011
-   comment:
+  title: "Ruby on Rails 3 Tutorial: Learn Rails by Example"
+  isbn: '03217453121'
+  url: http://amzn.com/0321743121
+  author: Michael Hartl
+  status: In progress 
+  start: June 2011
+  comment:
 -
-   title: "Notes on the Synthesis of Form" 
-   isbn: '9780674627512'
-   url: http://amzn.com/0674627512
-   author: Christopher Alexander
-   status: Finished June 2011
-   start: June 2011
-   comment:
+  title: "Notes on the Synthesis of Form" 
+  isbn: '9780674627512'
+  url: http://amzn.com/0674627512
+  author: Christopher Alexander
+  status: Finished June 2011
+  start: June 2011
+  comment: >
+    I got interested in this book after watching Ryan Singer's talk about it. I decided to read it after noticing that almost all of the well known OO design thinkers either recommend it or mention it as one of their inspirations.\n
+    This is a book about the process of design. About finding what you need to design an how it fits within it's "context". Most examples are from architecture, urbanism and industrial design but this book really is about design in general. It is not hard to see how you could apply parts of this process to the design of your software. It was especially interesting for me to see how the "unsefconscious process", now impractical for designing buildings, is like the agile processes we use.\n
+
 -
-   title: "Test Driven Development: By Example"
-   isbn: '0321146530'
-   url: http://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
-   author: Kent Beck
-   status: Finished June 2011
-   start: May 2011
-   comment: This is a nice book for people who would like an introduction to TDD. That said, I thought that it could have been replaced by two screencasts and a book of about 50 pages. It has a lot of "filler" material which is a bit annoying. I think I expected a bit more but overall it's an interesting read.
+  title: "Test Driven Development: By Example"
+  isbn: '0321146530'
+  url: http://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
+  author: Kent Beck
+  status: Finished June 2011
+  start: May 2011
+  comment: This is a nice book for people who would like an introduction to TDD. That said, I thought that it could have been replaced by two screencasts and a book of about 50 pages. It has a lot of "filler" material which is a bit annoying. I think I expected a bit more but overall it\'s an interesting read.
 -  
-   title: Eloquent Ruby
-   isbn: 0321584104 
-   url: http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104
-   author: Russ Olsen
-   status: Finished May 2011
-   start: April 2011
-   comment: Awesome book about how Ruby is actually used and how to avoid "programming Java in Ruby". It is somewhat similar to Effective Java. It took me a while to read it but it is a quick read. The perfect second Ruby book.
+  title: Eloquent Ruby
+  isbn: 0321584104 
+  url: http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104
+  author: Russ Olsen
+  status: Finished May 2011
+  start: April 2011
+  comment: Awesome book about how Ruby is actually used and how to avoid "programming Java in Ruby". It is somewhat similar to Effective Java. It took me a while to read it but it is a quick read. The perfect second Ruby book.
    
 -
-   title: Agile Web Development with Rails
-   url: http://www.amazon.com/Agile-Development-Rails-Pragmatic-Programmers/dp/1934356549/
-   isbn: 1934356549
-   author: Sam Ruby, Dave Thomas, David Heinemeier Hansson
-   status: On hold
-   start: April 2011
-   comment: 
+  title: Agile Web Development with Rails
+  url: http://www.amazon.com/Agile-Development-Rails-Pragmatic-Programmers/dp/1934356549/
+  isbn: 1934356549
+  author: Sam Ruby, Dave Thomas, David Heinemeier Hansson
+  status: On hold
+  start: April 2011
+  comment: 

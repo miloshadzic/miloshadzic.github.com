@@ -69,6 +69,10 @@ table {
 
 /* Typography */
 
+.bold { font-weight:700; }
+.heavy { font-weight:800; }
+.italic { font-style:italic; }
+
 p {
   font-size: 1em;
   line-height: 1.6em;
@@ -122,7 +126,7 @@ hr {
   border-bottom: 2px #eee solid;
   width:50%;
 }
-.date { color:#888; font-weight:normal; line-height:1.6em;margin-bottom:1.6em}
+.date { color:#888; font-size:13px;font-weight:normal; line-height:1.6em;margin-bottom:1.6em}
 
 a {
   text-decoration:none;
@@ -145,6 +149,23 @@ li {
 
 /* Here be the layout code */
 
+.floatright {
+  float:right;
+  max-width:100px;
+}
+
+.book {
+  min-height:9.6em;
+  margin-bottom:1.6em;
+}
+
+.bookcomment {
+  max-width:31em;
+  text-align:justify;
+}
+
+.title {
+}
 
 .content {
   margin:0 0 0 0;
@@ -152,7 +173,7 @@ li {
 
 #header {
   width:43em;
-  height:4em;
+  height:3.2em;
   margin:0 auto 24px auto;
 }
 
@@ -190,11 +211,13 @@ li {
   padding:6px; 
   padding-top:1em;
   -moz-transition-property:padding,margin, -moz-box-shadow;
-  -moz-transition:0.2s ease;
+  -moz-transition:0.2s ease-in-out;
+  -webkit-transition-property:padding,margin, -moz-box-shadow;
+  -webkit-transition:0.2s ease-in-out;
 }
 
 #name:hover {
-  -webkit-box-shadow:-2px 2px 3px #eeeeee;
+  -webkit-box-shadow:0 12px 0px $magenta;
   -moz-box-shadow:0 12px 0px $magenta;
 }
 
@@ -239,17 +262,3 @@ a.thumb>img {
 }
 a.thumb:hover>img {
 }
-
-.book td { vertical-align:top }
-table.book { width:100%;}
-.title { font-weight:bold }
-.book td { padding: 1em 1em 1em 0em; }
-.book tr { border-bottom:3.305px $grey dotted}
-
-a.dslink {
-  color:$black;
-  border:0;
-  -moz-transition:color 0.3s ease-in;
-  -webkit-transition:color 0.3s ease-in;
-}
-a.dslink:hover {color:$blue; border:0;}
