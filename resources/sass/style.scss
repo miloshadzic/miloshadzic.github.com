@@ -163,8 +163,12 @@ li {
 }
 
 .bookcomment {
-  max-width:31em;
   text-align:justify;
+  max-width:30em;
+}
+
+.author {
+  max-width:30em;
 }
 
 .title {
@@ -264,4 +268,8 @@ a.thumb>img {
   display:block;
 }
 a.thumb:hover>img {
+}
+
+.bookimg {
+  margin:0;
 }

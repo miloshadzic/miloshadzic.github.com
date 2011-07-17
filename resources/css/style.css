@@ -158,8 +158,11 @@ li {
   margin-bottom: 1.6em; }
 
 .bookcomment {
-  max-width: 31em;
-  text-align: justify; }
+  text-align: justify;
+  max-width: 30em; }
+
+.author {
+  max-width: 30em; }
 
 .content {
   margin: 0 0 0 0; }
@@ -256,3 +259,6 @@ a.thumb > img {
   margin-top: -12px;
   margin-bottom: 12px;
   display: block; }
+
+.bookimg {
+  margin: 0; }
