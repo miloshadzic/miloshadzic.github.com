@@ -150,6 +150,9 @@ li {
   float: right;
   max-width: 100px; }
 
+.floatleft {
+  float: left; }
+
 .book {
   min-height: 9.6em;
   margin-bottom: 1.6em; }
