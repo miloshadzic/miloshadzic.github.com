@@ -245,6 +245,16 @@ li {
 #posts a:hover {
   border-bottom: 2px #444444 dotted; }
 
+#footer a {
+  color: #444444;
+  border: 2px #eee dotted;
+  -moz-transition: border 0.3s ease-in;
+  -webkit-transition: border 0.3s ease-in;
+  font-weight: bold; }
+
+#footer a:hover {
+  border-bottom: 2px #444444 dotted; }
+
 .meta {
   float: left; }
 
@@ -262,3 +272,21 @@ a.thumb > img {
 
 .bookimg {
   margin: 0; }
+
+#footer {
+  margin-top: 3.2em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  border-top: 1px solid #ccc;
+  background: #eee;
+  width: 100%; }
+
+.center {
+  text-align: center; }
+
+.light {
+  font-weight: 300; }
+
+.small {
+  font-size: 13px;
+  line-height: 24px; }
