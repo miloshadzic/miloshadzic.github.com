@@ -1,7 +1,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dtfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -24,13 +24,13 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  background: white;
+  background: #fdfdfd;
   font-size: 15px;
-  line-height: 22px;
-  font-family: 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
+  font-family: Open Sans, 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
+  font-weight: 400;
   color: #444444;
-  text-rendering: optimizeLegibility;
-  -moz-font-features: "onum=1,pnum=1,liga=1"; }
+  -moz-font-features: "onum=1,pnum=1,liga=1";
+  border-top: 4px #444444 solid; }
 
 ol, ul {
   list-style: none; }
@@ -43,35 +43,51 @@ q:before, q:after {
   content: '';
   content: none; }
 
+::-moz-selection {
+  color: #fdfdfd;
+  background: #F25A7D; }
+
+::selection {
+  color: #fdfdfd;
+  background: #F25A7D; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* Typography */
+p {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-bottom: 1.6em; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-weight: 300;
+  text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 24.27px;
-  line-height: 39.269px;
-  margin-bottom: 12.135px;
+  font-size: 2.4em;
+  line-height: 2em;
+  margin-left: -1px;
+  margin-top: 0.6667em;
+  margin-bottom: 0em;
   letter-spacing: -1px;
   overflow-x: visible;
-  text-rendering: optimizeGeometry; }
+  text-rendering: optimizeLegibility; }
 
 h2 {
-  color: #ff9500;
-  margin: 12.135px 0;
-  text-rendering: optimizeGeometry;
-  font-weight: normal; }
-
-h3 {
-  font-size: 1.2em; }
+  color: #444444;
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-top: -0.8em;
+  margin-bottom: 0.8em;
+  text-rendering: optimizeLegibility; }
 
 h4 {
-  font-size: 11px;
+  font-size: 13px;
   margin: 0;
-  font-weight: normal; }
+  font-weight: 300; }
 
 h5 {
   font-size: 0.75em; }
@@ -79,84 +95,124 @@ h5 {
 h6 {
   font-size: 0.5em; }
 
-.m, .mono, pre {
-  font-family: 'Droid Sans Mono', Monaco, Consolas, monospace;
-  letter-spacing: -1px; }
+.m, .mono, pre, code {
+  font-size: 15px;
+  line-height: 1.8462em;
+  margin-bottom: 24px;
+  font-family: Inconsolata,Consolas, monospace;
+  letter-spacing: -1px;
+  overflow: auto; }
 
-pre {
-  margin-bottom: 1em; }
+pre, code {
+  margin-left: -15px;
+  padding-left: 12px;
+  border-left: 3px solid #eee; }
 
 hr {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   border: 0;
-  border-bottom: 1px #f6f6f5 solid;
-  width: 61.7%; }
+  border-bottom: 2px #eee solid;
+  width: 50%; }
 
 .date {
   color: #888;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 36px; }
 
 a {
   text-decoration: none;
-  color: #1693a7;
-  border-bottom: 2px white dotted;
-  -moz-transition: border-bottom 0.3s ease-in;
-  -webkit-transition: border-bottom 0.3s ease-in; }
+  color: inherit; }
 
 a:hover {
-  border-bottom: 2px #1693a7 dotted; }
+  color: inherit; }
+
+ul, ol {
+  margin-bottom: 1.6em;
+  list-style: circle;
+  list-style-position: inside; }
+
+li {
+  line-height: 1.6em; }
 
 /* Here be the layout code */
-#main {
-  width: 92%;
-  margin: 0 4%; }
-
-#posts {
-  float: left;
-  width: 58%;
-  margin: 26px 2% 4% 0%;
-  padding-right: 2%;
-  border-right: 3px #f6f6f5 dotted; }
-
 .content {
   margin: 0 0 0 0; }
 
 #header {
-  float: left;
-  margin-top: 15px; }
+  width: 43em;
+  margin: 24px auto; }
 
-p {
-  margin-top: 12.135px; }
+#header ul {
+  display: inline-block;
+  margin-left: 200px; }
+
+#header ul li {
+  color: #777;
+  background: #eee;
+  border: 0;
+  -moz-transition-property: color,background;
+  -moz-transition: 0.15s ease-in;
+  -webkit-transition-property: color,background;
+  -webkit-transition: 0.15s ease-in;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -1px; }
+
+#header ul li:hover {
+  color: #fdfdfd;
+  background: #444444; }
+
+#header ul li a {
+  display: block;
+  padding: 6px 6px; }
 
 #name {
-  font-size: 22px;
-  font-weight: bold; }
+  color: #fdfdfd;
+  font-size: 20px;
+  font-weight: 800;
+  background: #444444;
+  display: inline;
+  padding: 6px;
+  padding-top: 28px;
+  -moz-transition-property: padding,margin, -moz-box-shadow;
+  -moz-transition: 0.2s ease; }
 
-#header a {
-  color: #444444;
-  border: 0;
-  -moz-transition: color 0.3s ease-in;
-  -webkit-transition: color 0.3s ease-in; }
-
-#header a:hover {
-  color: #1693a7;
-  border: 0; }
+#name:hover {
+  -webkit-box-shadow: -2px 2px 3px #eeeeee;
+  -moz-box-shadow: 0 12px 0px #444444; }
 
 /* Blog post list */
 .postlist {
   margin: 1em 0 0 2em;
   float: left; }
 
+.meta p {
+  font-size: 2.4em;
+  font-weight: 300;
+  line-height: 2em;
+  margin-bottom: 16px; }
+
+.meta .date {
+  color: #888; }
+
+#posts {
+  max-width: 37em;
+  margin: 0 auto;
+  margin-top: 96px;
+  padding-right: 2%; }
+
 #posts a {
   color: #444444;
-  border: 0;
-  -moz-transition: color 0.3s ease-in;
-  -webkit-transition: color 0.3s ease-in;
+  border: 2px #fdfdfd dotted;
+  -moz-transition: border 0.3s ease-in;
+  -webkit-transition: border 0.3s ease-in;
   font-weight: bold; }
 
 #posts a:hover {
-  color: #1693a7; }
+  border-bottom: 2px #444444 dotted; }
+
+.meta {
+  float: left; }
 
 /* Thumbnail image styling */
 .thumb {
@@ -166,17 +222,9 @@ a.thumb:hover {
   border: none; }
 
 a.thumb > img {
-  margin-top: 11.25px;
-  -moz-box-shadow: 0px 2px 5px #f6f6f5;
-  -webkit-box-shadow: 0px 2px 5px #f6f6f5;
-  box-shadow: 0px 5px 5px #f6f6f5;
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in; }
-
-a.thumb:hover > img {
-  -moz-box-shadow: 0px 2px 5px #ddd;
-  -webkit-box-shadow: 0px 2px 5px #ddd;
-  box-shadow: 0px 5px 5px #ddd; }
+  margin-top: -12px;
+  margin-bottom: 12px;
+  display: block; }
 
 .book td {
   vertical-align: top; }
@@ -202,7 +250,3 @@ a.dslink {
 a.dslink:hover {
   color: #1693a7;
   border: 0; }
-
-#toppaint {
-  background: #fcfcfb;
-  padding-bottom: 9.271px; }
