@@ -45,11 +45,11 @@ q:before, q:after {
 
 ::-moz-selection {
   color: #fdfdfd;
-  background: #F25A7D; }
+  background: #444444; }
 
 ::selection {
   color: #fdfdfd;
-  background: #F25A7D; }
+  background: #444444; }
 
 table {
   border-collapse: collapse;
@@ -86,7 +86,6 @@ h2 {
 
 h4 {
   font-size: 13px;
-  margin: 0;
   font-weight: 300; }
 
 h5 {
@@ -97,9 +96,9 @@ h6 {
 
 .m, .mono, pre, code {
   font-size: 15px;
-  line-height: 1.8462em;
-  margin-bottom: 24px;
-  font-family: Inconsolata,Consolas, monospace;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+  font-family: Consolas,Inconsolata,Consolas, monospace;
   letter-spacing: -1px;
   overflow: auto; }
 
@@ -109,7 +108,8 @@ pre, code {
   border-left: 3px solid #eee; }
 
 hr {
-  margin-bottom: 24px;
+  margin-top: 3.2em;
+  margin-bottom: 1.6em;
   border: 0;
   border-bottom: 2px #eee solid;
   width: 50%; }
@@ -117,7 +117,8 @@ hr {
 .date {
   color: #888;
   font-weight: normal;
-  margin-bottom: 36px; }
+  line-height: 1.6em;
+  margin-bottom: 1.6em; }
 
 a {
   text-decoration: none;
@@ -140,11 +141,12 @@ li {
 
 #header {
   width: 43em;
-  margin: 24px auto; }
+  height: 4em;
+  margin: 0 auto 24px auto; }
 
 #header ul {
-  display: inline-block;
-  margin-left: 200px; }
+  display: block;
+  float: right; }
 
 #header ul li {
   color: #777;
@@ -154,7 +156,8 @@ li {
   -moz-transition: 0.15s ease-in;
   -webkit-transition-property: color,background;
   -webkit-transition: 0.15s ease-in;
-  display: inline-block;
+  display: block;
+  float: left;
   font-weight: 700;
   letter-spacing: -1px; }
 
@@ -168,12 +171,13 @@ li {
 
 #name {
   color: #fdfdfd;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
   background: #444444;
-  display: inline;
+  display: block;
+  float: left;
   padding: 6px;
-  padding-top: 28px;
+  padding-top: 1em;
   -moz-transition-property: padding,margin, -moz-box-shadow;
   -moz-transition: 0.2s ease; }
 

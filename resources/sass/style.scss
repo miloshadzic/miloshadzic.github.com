@@ -4,6 +4,8 @@ $grey: #f6f6f5;
 $lgrey: #fcfcfb;
 $orange: #FF9500;
 $magenta: #444;
+$light_magenta: #F25A7D;
+$light_magenta: $magenta;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,12 +54,12 @@ q:before, q:after {
 }
 ::-moz-selection {
   color:#fdfdfd;
-  background:#F25A7D;
+  background:$light_magenta;
 }
 
 ::selection {
   color:#fdfdfd;
-  background:#F25A7D;
+  background:$light_magenta;
 }
 
 table {
@@ -94,15 +96,15 @@ h2 {
   text-rendering:optimizeLegibility;
 }
 
-h4 {font-size:13px; margin:0; font-weight:300;}
+h4 {font-size:13px; font-weight:300;}
 h5 {font-size:0.75em;}
 h6 {font-size:0.5em;}
 
 .m, .mono, pre, code {
   font-size:15px;
-  line-height:1.8462em;
-  margin-bottom:24px;
-  font-family: Inconsolata,Consolas, monospace; 
+  line-height:1.6em;
+  margin-bottom:1.6em;
+  font-family: Consolas,Inconsolata,Monaco,monospace; 
   letter-spacing:-1px; 
   overflow:auto;
 }
@@ -114,12 +116,13 @@ pre, code {
 }
 
 hr {
-  margin-bottom:24px;
+  margin-top:3.2em;
+  margin-bottom:1.6em;
   border:0;
   border-bottom: 2px #eee solid;
   width:50%;
 }
-.date { color:#888; font-weight:normal; margin-bottom:36px;}
+.date { color:#888; font-weight:normal; line-height:1.6em;margin-bottom:1.6em}
 
 a {
   text-decoration:none;
@@ -149,10 +152,11 @@ li {
 
 #header {
   width:43em;
-  margin:24px auto;
+  height:4em;
+  margin:0 auto 24px auto;
 }
 
-#header ul { display:inline-block;margin-left:200px;}
+#header ul { display:block;float:right;}
 #header ul li { 
   color:#777;
   background:#eee;
@@ -161,7 +165,8 @@ li {
   -moz-transition:0.15s ease-in;
   -webkit-transition-property:color,background;
   -webkit-transition:0.15s ease-in;
-  display:inline-block; 
+  display:block; 
+  float:left;
   font-weight:700;
   letter-spacing:-1px;
 }
@@ -177,12 +182,13 @@ li {
 
 #name {
   color: #fdfdfd;
-  font-size:20px;
+  font-size:24px;
   font-weight:800; 
   background:$magenta;
-  display:inline;
+  display:block;
+  float:left;
   padding:6px; 
-  padding-top:28px;
+  padding-top:1em;
   -moz-transition-property:padding,margin, -moz-box-shadow;
   -moz-transition:0.2s ease;
 }
