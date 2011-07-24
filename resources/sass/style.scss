@@ -246,6 +246,7 @@ li {
   margin:0 auto;
   margin-top:96px;
   padding-right:2%;
+
 }
 
 #posts td {}
@@ -274,6 +275,8 @@ a.thumb:hover {border:none}
 a.thumb>img {
   margin-top:-12px;
   margin-bottom:12px;
+  margin-left:auto;
+  margin-right:auto;
   display:block;
 }
 a.thumb:hover>img {
