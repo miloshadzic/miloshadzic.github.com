@@ -1,19 +1,17 @@
 ---
-layout: default
+layout: center
 title: Home
 ---
 
-<div id="posts">
-  {% for post in site.posts limit:5 %}
-    <div class="post">
-      <h1>{{ post.title }}</h1>
-      <div class="content">
-        {{ post.content }}
-        <h4 class="date">Posted on {{ post.date | date: "%B %d,  %Y" }}.</h4>
-      </div>
+{% for post in site.posts limit:5 %}
+  <div class="post">
+    <h1>{{ post.title }}</h1>
+    <div class="content">
+      {{ post.content }}
+      <h4 class="date">Posted on {{ post.date | date: "%B %d,  %Y" }}.</h4>
     </div>
-    {% unless forloop.last %}
-      <hr />
-    {% endunless %}
-  {% endfor %}
-</div>
+  </div>
+  {% unless forloop.last %}
+    <hr />
+  {% endunless %}
+{% endfor %}

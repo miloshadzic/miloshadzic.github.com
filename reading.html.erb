@@ -1,45 +1,43 @@
 ---
-layout: default
+layout: centered
 title: Reading List
 ---
-<div id="posts">
-  <h1>Reading List</h1>
-  <% 
-      require 'yaml'
+<h1>Reading List</h1>
+<% 
+    require 'yaml'
 
-  list = YAML::load_file('books.yml')
-  reading = []
-  read = []
+list = YAML::load_file('books.yml')
+reading = []
+read = []
 
-  for book in list do 
-    book['comment'] = book['comment'].to_s.split('\n') || book['comment']
+for book in list do 
+  book['comment'] = book['comment'].to_s.split('\n') || book['comment']
 
-    if book['status'] == "In progress"
-      reading << book
-    else
-      read << book
-    end
-
-    book['date'] = "#{book['start'].split[0..1].join(" ")} - #{book['status'].split[1..2].join(" ")}" unless book['status'] == "In progress"
+  if book['status'] == "In progress"
+    reading << book
+  else
+    read << book
   end
+
+  book['date'] = "#{book['start'].split[0..1].join(" ")} - #{book['status'].split[1..2].join(" ")}" unless book['status'] == "In progress"
+end
   %>
 <% for book in reading %>
-<div class="book">
-  <a class="floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
-  <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
-  <p class="italic author"><%= book['author'] %></p>
+  <div class="book">
+    <a class="floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
+    <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
+    <p class="italic author"><%= book['author'] %></p>
 
-  <p class="date"><%= book['date'] %></p>
-</div>
+    <p class="date"><%= book['date'] %></p>
+  </div>
 <% end %>
 <% for book in read %>
-<div class="book">
-  <a class="floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
-  <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
-  <span class="italic"><%= book['author'] %><br /></span>
+  <div class="book">
+    <a class="floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
+    <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
+    <span class="italic"><%= book['author'] %><br /></span>
 
-  <p class="date "><%= book['date'] %></p>
-  <% for p in book['comment'] do %> <p class="bookcomment"><%= p %></span><% end %>
+    <p class="date "><%= book['date'] %></p>
+    <% for p in book['comment'] do %> <p class="bookcomment"><%= p %></span><% end %>
 </div>
 <% end %>
-</div>
