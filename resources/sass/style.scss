@@ -249,12 +249,11 @@ li {
 
 }
 
-#posts td {}
-#posts a {color: $magenta; border:2px #fdfdfd dotted; 
+#centered a {color: $magenta; border:2px #fdfdfd dotted; 
   -moz-transition:border 0.3s ease-in;
   -webkit-transition:border 0.3s ease-in;
   font-weight:bold}
-#posts a:hover {
+#centered a:hover {
   border-bottom:2px $magenta dotted;
 }
 
