@@ -12,6 +12,7 @@ task :serve do
   `jekyll --serve --auto`
 end
 
+# should create non-existing comment files
 task :reading do
   `erb reading.html.erb > reading.html`
 end

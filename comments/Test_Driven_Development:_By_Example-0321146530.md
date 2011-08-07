@@ -1,0 +1,1 @@
+This is a nice book for people who would like an introduction to TDD. That said, I thought that it could have been replaced by two screencasts and a book of about 50 pages. It has a lot of "filler" material which is a bit annoying. I think I expected a bit more but overall it's an interesting read.

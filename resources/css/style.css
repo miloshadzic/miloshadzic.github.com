@@ -155,11 +155,12 @@ li {
 
 .book {
   min-height: 9.6em;
-  margin-bottom: 1.6em; }
+  margin-bottom: 1.6em;
+  padding-right: 1em; }
 
 .bookcomment {
   text-align: justify;
-  max-width: 30em; }
+  max-width: 29em; }
 
 .author {
   max-width: 30em; }

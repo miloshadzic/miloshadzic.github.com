@@ -4,40 +4,26 @@ title: Reading List
 ---
 <h1>Reading List</h1>
 <% 
-    require 'yaml'
+    require '/home/milos/Devel/Ruby/miloshadzic.com/lib/books/books'
 
-list = YAML::load_file('books.yml')
-reading = []
-read = []
-
-for book in list do 
-  book['comment'] = book['comment'].to_s.split('\n') || book['comment']
-
-  if book['status'] == "In progress"
-    reading << book
-  else
-    read << book
-  end
-
-  book['date'] = "#{book['start'].split[0..1].join(" ")} - #{book['status'].split[1..2].join(" ")}" unless book['status'] == "In progress"
-end
+list = ReadingList.new('books.yml')
   %>
-<% for book in reading %>
-  <div class="book">
-    <a class="floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
-    <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
-    <p class="italic author"><%= book['author'] %></p>
 
-    <p class="date"><%= book['date'] %></p>
+<% for book in list.in_progress_books %>
+  <div class="book">
+    <a class="floatright" href="<%= book.amazon_url %>"><img src="/resources/images/books/<%= book.isbn %>.png" /></a>
+    <a class="dslink" href="<%= book.amazon_url %>"><span class="floatleft bold"><%= book.title %></span></a><br />
+    <span class="italic"><%= book.authors %></span>
+    <p class="date">Started in <%= book.start_date.join(' ') %></p>
   </div>
 <% end %>
-<% for book in read %>
+<% for book in list.finished_books %>
   <div class="book">
-    <a class="floatright" href="<%= book['url'] %>"><img src="/resources/images/books/<%= book['isbn'] %>.png" /></a>
-    <a class="dslink" href="<%= book['url'] %>"><span class="floatleft bold"><%= book['title'] %></span></a><br />
-    <span class="italic"><%= book['author'] %><br /></span>
+    <a class="floatright" href="<%= book.amazon_url %>"><img src="/resources/images/books/<%= book.isbn %>.png" /></a>
+    <a class="dslink" href="<%= book.amazon_url %>"><span class="floatleft bold"><%= book.title %></span></a><br />
+    <span class="italic"><%= book.authors %><br /></span>
 
-    <p class="date "><%= book['date'] %></p>
-    <% for p in book['comment'] do %> <p class="bookcomment"><%= p %></span><% end %>
-</div>
+    <p class="date "><%= book.from_to %></p>
+    <div class='bookcomment'><%= book.comment.html %></div>
+  </div>
 <% end %>
