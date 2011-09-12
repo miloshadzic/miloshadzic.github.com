@@ -1,5 +1,9 @@
 /* TEAM */
-The Man: Miloš Hadžić
-Site: http://miloshadzic.com
-Twitter: miloshadzic
-Location: Belgrade, Serbia.
+  The Man: Miloš Hadžić
+  Site: http://miloshadzic.com
+  Twitter: miloshadzic
+  Location: Belgrade, Serbia.
+
+/* SITE */
+  Components: Hyphenator
+  Software: Ruby, Jekyll, Sass
