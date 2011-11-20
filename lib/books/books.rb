@@ -74,13 +74,18 @@ class BookComment
 
   def initialize(path)
     `touch "#{path}"` unless File.exists?(path)
-    raw_text  = File.open(path, 'r') { |f| f.read }
-    @markdown = Redcarpet.new(raw_text)
-    @html     = @markdown.to_html
+    @raw_text = File.open(path, 'r') { |f| f.read }
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
+                                       :autolink => true,
+                                       :no_intra_emphasis => true,
+                                       :space_after_headers => true,
+                                       :superscript => true,
+                                       :fenced_code_blocks => true)
+    @html     = @markdown.render(@raw_text)
   end
 
   def markdown
-    @markdown.text
+    @raw_text
   end
 
 end
