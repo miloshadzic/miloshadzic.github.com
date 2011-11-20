@@ -84,7 +84,7 @@ h1 {
   overflow-x: visible;
   text-rendering: optimizeLegibility; }
 
-h2 {
+h2, h3 {
   color: #444444;
   font-weight: 800;
   font-size: 1em;
@@ -92,6 +92,9 @@ h2 {
   margin-top: -0.8em;
   margin-bottom: 0.8em;
   text-rendering: optimizeLegibility; }
+
+h3 {
+  font-weight: 300; }
 
 h4 {
   font-size: 13px;
