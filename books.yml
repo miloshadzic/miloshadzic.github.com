@@ -5,6 +5,15 @@
   author: Martin Fowler, Kent Beck, John Brant, William Opdyke, Don Roberts
   status: In Progress
   start: August 2011
+
+-
+  title: 'Rework'
+  isbn:  '9780307463746'
+  url: http://amzn.com/0307463745
+  author: Jason Fried, David Heinemeier Hansson
+  status: Finished
+  start: August 2011
+  finish: August 2011
  
 -
   title: "Apprenticeship Patterns"
