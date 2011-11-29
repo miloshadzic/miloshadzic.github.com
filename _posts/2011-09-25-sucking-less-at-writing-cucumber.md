@@ -9,7 +9,7 @@ I wrote my first [Cucumber](http://cukes.info/) scenario about five months ago. 
 {% highlight cucumber %}
 Scenario: Changing email
   Given I am logged in
-  And I an on the homepage
+  And I am on the homepage
   When I click on "Account"
   And I fill in "email" with "milos@example.com"
   And I press "Change Email"
