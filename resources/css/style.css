@@ -248,15 +248,18 @@ li {
   margin-top: 96px;
   padding-right: 2%; }
 
+#center h1 a {
+  background: #fcfcfb; }
+
+#center h1 a:hover {
+  color: #444444;
+  background: #f6f6f5; }
+
 #center a {
   color: #444444;
   background: #f6f6f5;
   padding: 1px 2px;
-  border-radius: 1px;
-  -moz-transition-property: color,background;
-  -moz-transition: 15s ease-in;
-  -webkit-transition-property: color,background;
-  -webkit-transition: 5s ease-in; }
+  border-radius: 1px; }
 
 #center a:hover {
   color: #fff;
