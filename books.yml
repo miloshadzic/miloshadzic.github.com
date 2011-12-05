@@ -11,8 +11,9 @@
   isbn: '0596517742'
   url: http://amzn.com/0596517742
   author: Douglas Crockford
-  status: In progress
+  status: Finished
   start: November 2011
+  finish: December 2011
 
 -
   title: 'Rework'
