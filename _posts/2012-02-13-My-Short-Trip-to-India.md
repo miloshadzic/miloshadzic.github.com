@@ -12,7 +12,7 @@ India is the first place where I've experienced the feeling of almost too much f
 
 [![Me in Hampi.](/resources/images/hampi_thumb.jpg "Me in Hampi.")](/resources/images/hampi.jpg)
 
-But India is a land of contrasts as everyone will tell you. You see the extremely rich people and the extremely poor not more than two blocks from each other. Some of the former you can see living in slums and the latter in fort-like mansions. In spite of that, it seemed to me that the (not so rich) people in India are really happy. We had a running joke if were going to stumble upon anyone who'll treat us badly. But now that I think about it, a woman in Jaipur carrying bamboo sticks pulled out the largest knife I've seen when I tried to photograph her.
+But India is a land of contrasts as everyone will tell you. You see the extremely poor people and the extremely rich not more than two blocks from each other. Some of the former you can see living in slums and the latter in fort-like mansions. In spite of that, it seemed to me that the (not so rich) people in India are really happy. We had a running joke if were going to stumble upon anyone who'll treat us badly. But now that I think about it, a woman in Jaipur carrying bamboo sticks pulled out the largest knife I've seen when I tried to photograph her.
 
 Indians work a lot. Much more so than people in Serbia or elsewhere I've been. So many people work Sundays that you just don't care which day it is anymore. I tried to get my films developed on Sunday, January first, but the guy in the neighbouring shop told me that the photo store is closed on Sundays. Working on January first was the usual deal for him. It's not that it's mandated that you should be open, it's that by being open you get to earn money that day.
 
