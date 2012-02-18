@@ -12,7 +12,7 @@ list = ReadingList.new('books.yml')
 <% for book in list.in_progress_books %>
   <div class="book">
     <a class="floatright" href="<%= book.amazon_url %>"><img src="/resources/images/books/<%= book.isbn %>.png" /></a>
-    <a class="dslink" href="<%= book.amazon_url %>"><span class="floatleft bold"><%= book.title %></span></a><br />
+    <a class='floatleft bold' href="<%= book.amazon_url %>"><%= book.title %></a><br />
     <span class="italic"><%= book.authors %></span>
     <p class="date">Started in <%= book.start_date.join(' ') %></p>
   </div>
@@ -20,7 +20,7 @@ list = ReadingList.new('books.yml')
 <% for book in list.finished_books %>
   <div class="book">
     <a class="floatright" href="<%= book.amazon_url %>"><img src="/resources/images/books/<%= book.isbn %>.png" /></a>
-    <a class="dslink" href="<%= book.amazon_url %>"><span class="floatleft bold"><%= book.title %></span></a><br />
+    <a class='floatleft bold' href="<%= book.amazon_url %>"><%= book.title %></a><br />
     <span class="italic"><%= book.authors %><br /></span>
 
     <p class="date "><%= book.from_to %></p>
