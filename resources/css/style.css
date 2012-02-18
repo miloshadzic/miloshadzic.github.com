@@ -24,8 +24,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  background: #fdfdfd;
-  font-size: 15px;
+  background: white;
+  font-size: 14px;
   font-family: Open Sans, 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
   font-weight: 400;
   color: #444444;
@@ -255,16 +255,6 @@ li {
   color: #444444;
   background: #f6f6f5; }
 
-#center a {
-  color: #444444;
-  background: #f6f6f5;
-  padding: 1px 2px;
-  border-radius: 1px; }
-
-#center a:hover {
-  color: #fff;
-  background: #444444; }
-
 #footer a {
   color: #444444;
   border: 2px #eee dotted;
@@ -277,6 +267,30 @@ li {
 
 .meta {
   float: left; }
+
+a > img {
+  transition: border-color 0.3s ease-in;
+  -moz-transition: border-color 0.3s ease-in;
+  -webkit-transition: border-color 0.3s ease-in;
+  margin: -0.5em;
+  border: 0.5em solid white; }
+
+a > img:hover {
+  margin: -0.5em;
+  border: 0.5em solid #f6f6f5; }
+
+#center a {
+  transition: color, background 0.1s ease-in;
+  -moz-transition: color, background 0.1s ease-in;
+  -webkit-transition: color, background 0.1s ease-in;
+  background: #f6f6f5;
+  border-radius: 0.3em;
+  padding: 0.1em 0.2em;
+  margin: -0.1em -0.2em; }
+
+#center a:hover {
+  background: #444444;
+  color: white; }
 
 /* Thumbnail image styling */
 .thumb {
