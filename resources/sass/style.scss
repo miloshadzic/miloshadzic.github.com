@@ -53,12 +53,12 @@ q:before, q:after {
     content: none;
 }
 ::-moz-selection {
-  color:#fdfdfd;
-  background:$lgrey;
+  color:$magenta;
+  background:$grey;
 }
 
 ::selection {
-  color:#fdfdfd;
+  color: $magenta;
   background:$light_magenta;
 }
 

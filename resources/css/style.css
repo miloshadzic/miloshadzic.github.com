@@ -44,11 +44,11 @@ q:before, q:after {
   content: none; }
 
 ::-moz-selection {
-  color: #fdfdfd;
-  background: #fcfcfb; }
+  color: #444444;
+  background: #f6f6f5; }
 
 ::selection {
-  color: #fdfdfd;
+  color: #444444;
   background: #444444; }
 
 table {
