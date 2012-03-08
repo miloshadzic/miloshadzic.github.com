@@ -73,3 +73,5 @@ The way I see it, this way you have a lot less logic in your ActiveRecord model.
 I think I'll be creating callback objects for most callbacks.  It seems like a really cheap way to thin out models even more.
 
 The only bad thing I see is that there's a bit more code, but I can live with that.
+
+[Hacker News thread for comments →](http://news.ycombinator.com/item?id=3679333)
