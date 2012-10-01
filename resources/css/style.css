@@ -26,10 +26,10 @@ footer, header, hgroup, menu, nav, section {
 body {
   background: white;
   font-size: 14px;
-  font-family: Open Sans, 'Droid Sans', 'Lucida Grande', 'Segoe UI', sans-serif;
-  font-weight: 400;
+  font-family: proxima-nova-1, proxima-nova-2, sans-serif;
   color: #444444;
   -moz-font-features: "onum=1,pnum=1,liga=1";
+  text-rendering: optimizeLegibility;
   border-top: 4px #444444 solid; }
 
 ol, ul {
@@ -69,9 +69,11 @@ em {
   font-style: italic; }
 
 p {
-  font-size: 1em;
   line-height: 1.6em;
-  margin-bottom: 1.6em; }
+  margin-bottom: 1.6em;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
@@ -85,8 +87,7 @@ h1 {
   margin-top: 0.6667em;
   margin-bottom: 0em;
   letter-spacing: -1px;
-  overflow-x: visible;
-  text-rendering: optimizeLegibility; }
+  overflow-x: visible; }
 
 h2, h3 {
   color: #444444;
