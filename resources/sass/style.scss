@@ -16,28 +16,27 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    background:white;
-    font-size:14px;
-    font-family: proxima-nova-1, proxima-nova-2, sans-serif;
+    background:#ffffff;
+    font-size: 125%;
+    font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2","serif";
     color: $black;
-    -moz-font-features:"onum=1,pnum=1,liga=1";
+    hyphens: auto;
     text-rendering:optimizeLegibility;
     border-top:4px $magenta solid;
 }
@@ -67,11 +66,8 @@ table {
     border-spacing: 0;
 }
 
-/* Typography */
 
-.bold { font-weight:700; }
-.heavy { font-weight:800; }
-.italic { font-style:italic; }
+/* Typography */
 
 em {
   font-style:italic;
@@ -88,15 +84,13 @@ p {
 h1,h2,h3,h4,h5,h6 { font-weight:300; text-rendering:optimizeLegibility}
 h1 {
   font-size:1.6em;
-  font-weight: 800;
+  font-weight: bold;
   line-height: 2em;
-  margin-left:-1px;
   margin-top: 0.6667em;
   margin-bottom: 0em;
-  letter-spacing:-1px;
   overflow-x:visible;
 }
-h2, h3 { 
+h2, h3 {
   color:$black;
   font-weight:800;
   font-size:1em;
@@ -106,20 +100,13 @@ h2, h3 {
   text-rendering:optimizeLegibility;
 }
 
-h3 {
-  font-weight: 300;
-}
-
-h4 {font-size:13px; font-weight:300;}
+h4 {font-size:0.8em}
 h5 {font-size:0.75em;}
 h6 {font-size:0.5em;}
 
 .m, .mono, pre, code {
-  font-size:14px;
-  line-height:1.6em;
-  margin-bottom:1.6em;
-  font-family: Consolas,Inconsolata,Monaco,monospace; 
-  letter-spacing:-1px; 
+  font-family: monospace;
+  margin-bottom: 1.6em;
   overflow:auto;
 }
 
@@ -136,12 +123,12 @@ hr {
   border-bottom: 2px #eee solid;
   width:50%;
 }
-.date { color:#888; font-size:13px;font-weight:normal; line-height:1.6em;margin-bottom:1.6em}
+time { color:#888; font-weight:normal; line-height:1.6em;margin-bottom:1.6em}
 
 a {
   text-decoration:none;
   color:inherit;
-} 
+}
 
 a:hover {
   color:inherit;
@@ -196,14 +183,14 @@ li {
   margin:0 0 0 0;
 }
 
-#header {
+header {
   width:43em;
   height:3.2em;
   margin:0 auto 24px auto;
 }
 
-#header ul { display:block;float:right;}
-#header ul li { 
+header ul { display:block;float:right;}
+header ul li {
   color:#777;
   background:#eee;
   border:0;
@@ -211,17 +198,16 @@ li {
   -moz-transition:0.15s ease-in;
   -webkit-transition-property:color,background;
   -webkit-transition:0.15s ease-in;
-  display:block; 
+  display:block;
   float:left;
   font-weight:700;
-  letter-spacing:-1px;
 }
-#header ul li:hover { 
+header ul li:hover {
   color:#fdfdfd;
   background:$magenta;
 }
 
-#header ul li a {
+header ul li a {
   display:block;
   padding: 6px 6px;
 }
@@ -229,11 +215,11 @@ li {
 #name {
   color: #fdfdfd;
   font-size:24px;
-  font-weight:800; 
+  font-weight:800;
   background:$magenta;
   display:block;
   float:left;
-  padding:6px; 
+  padding:6px;
   padding-top:1em;
   -moz-transition-property:padding,margin, -moz-box-shadow;
   -moz-transition:0.2s ease-in-out;
@@ -255,11 +241,15 @@ li {
   line-height: 2em;
   margin-bottom: 16px;
 }
-.meta .date {
+article {
+  margin-bottom: 1.6em;
+}
+
+time {
   color: #888;
 }
 
-#center { 
+#center {
   max-width:37em;
   margin:0 auto;
   margin-top:96px;
@@ -275,7 +265,7 @@ li {
   background: $grey;
 }
 
-#footer a {color: $magenta; border:2px #eee dotted; 
+#footer a {color: $magenta; border:2px #eee dotted;
   -moz-transition:border 0.3s ease-in;
   -webkit-transition:border 0.3s ease-in;
   font-weight:bold}
@@ -298,7 +288,7 @@ a>img:hover {
   border: 0.5em solid $grey;
 }
 
-#center a { 
+#center a {
   transition: color, background 0.1s ease-in;
   -moz-transition: color, background 0.1s ease-in;
   -webkit-transition: color, background 0.1s ease-in;
