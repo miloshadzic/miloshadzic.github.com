@@ -151,58 +151,31 @@ li {
   margin-bottom: 1.6em;
   padding-right: 1em; }
 
-.bookcomment {
-  text-align: justify;
-  max-width: 29em; }
+header h1 {
+  font-weight: normal;
+  text-align: center; }
 
-.author {
-  max-width: 30em; }
+header nav {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
 
-.content {
-  margin: 0 0 0 0; }
+header nav ul {
+  list-style-type: none; }
 
-header {
-  width: 43em;
-  height: 3.2em;
-  margin: 0 auto 24px auto; }
-
-header ul {
-  display: block;
-  float: right; }
-
-header ul li {
+header nav ul li {
   color: #777;
   background: #eee;
-  border: 0;
-  -moz-transition-property: color,background;
-  -moz-transition: 0.15s ease-in;
-  -webkit-transition-property: color,background;
-  -webkit-transition: 0.15s ease-in;
-  display: block;
   float: left;
   font-weight: 700; }
 
-header ul li:hover {
+header nav ul li:hover {
   color: #fdfdfd;
   background: #444444; }
 
-header ul li a {
+header nav ul li a {
   display: block;
   padding: 6px 6px; }
-
-#name {
-  color: #fdfdfd;
-  font-size: 24px;
-  font-weight: 800;
-  background: #444444;
-  display: block;
-  float: left;
-  padding: 6px;
-  padding-top: 1em;
-  -moz-transition-property: padding,margin, -moz-box-shadow;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition-property: padding,margin, -moz-box-shadow;
-  -webkit-transition: 0.2s ease-in-out; }
 
 /* Blog post list */
 .postlist {
