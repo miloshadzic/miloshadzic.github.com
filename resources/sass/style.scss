@@ -1,6 +1,6 @@
 $text: #333;
-$lightertext: #333;
-$lighttext: #777;
+$lightertext: #444;
+$lighttext: #666;
 $background: white;
 $blue: #1693a7;
 $grey: #f6f6f5;
@@ -35,13 +35,15 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    background:#ffffff;
+    background: $background;
     font-size: 125%;
+    line-height: 1.5em;
     font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2","serif";
     color: $text;
     hyphens: auto;
     border-top: 0.2rem $text solid;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 ol, ul {
     list-style: none;
@@ -55,13 +57,13 @@ q:before, q:after {
     content: none;
 }
 ::-moz-selection {
-  color:$magenta;
-  background:$grey;
+  color:white;
+  background: $text;
 }
 
 ::selection {
-  color: $magenta;
-  background:$light_magenta;
+  color: white;
+  background: $text;
 }
 
 table {
@@ -77,8 +79,7 @@ em {
 }
 
 p {
-  line-height: 1.6em;
-  margin-bottom:1.6em;;
+  margin-bottom:1.5em;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
@@ -86,33 +87,27 @@ p {
 
 h1 {
   color: $lightertext;
-  font-size: 1.6em;
+  font-size: 2.5rem;
   font-weight: bold;
-  line-height: 2em;
-  margin-top: 0.6667em;
-  margin-bottom: 0em;
-  overflow-x: visible;
-}
-h2, h3 {
-  font-size: 1em;
-  line-height: 1.6;
-  margin-top: -0.8em;
-  margin-bottom: 0.8em;
+  line-height: 3rem;
+  margin-bottom: 0.75rem;
 }
 
-h4 {font-size:0.8em}
-h5 {font-size:0.75em;}
-h6 {font-size:0.5em;}
+h2, h3 {
+  font-size: 1rem;
+  margin-top: -0.75em;
+  margin-bottom: 0.75em;
+}
 
 .m, .mono, pre, code {
   font-family: Menlo, Monaco, DejaVu Sans Mono, monospace;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.5em;
   overflow:auto;
 }
 
 pre, code {
   font-size: 0.90rem;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
   margin-left: -1rem;
   padding-left: 0.6rem;
   border-left: 0.4rem solid #eee;
@@ -120,22 +115,22 @@ pre, code {
 
 hr {
   margin-top: 3.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
   border: 0;
   border-bottom: 2px #eee solid;
   width: 20rem;
 }
+
 time {
   font-size: 0.95rem;
   color: $lighttext;
   font-style:italic;
-  line-height: 1.6rem;
-  margin-bottom: 1.6rem;
-  margin-top:-1.6rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 ul, ol {
-  margin-bottom:1.6em;
+  margin-bottom:1.5em;
 }
 
 ol {
@@ -148,61 +143,33 @@ ul {
 }
 
 li {
-  line-height:1.6em;
+  line-height:1.5em;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-  font-weight: bold;
   padding:0em 0.1em;
   margin:0em -0.1em;
+}
+
+a:hover {
+  color: black;
 }
 
 
 header {
   max-width: 30rem;
   margin: 0 auto;
+  margin-top: 3rem;
 }
 
 header h1 a {
   font-weight: normal;
-  background: $background;
+  text-decoration: none;
 }
 
 header p {
   font-size: 0.95rem;
-}
-
-header nav {
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header nav ul {
-  list-style-type: none;
-}
-
-header nav ul li {
-  color:#777;
-  background:#eee;
-  float: left;
-  font-weight:700;
-}
-header nav ul li:hover {
-  color:#fdfdfd;
-  background:$magenta;
-}
-
-header nav ul li a {
-  display: block;
-  background: $background;
-  padding: 6px 6px;
-}
-
-header nav ul li a:hover {
-  color: $text;
 }
 
 /* Blog post list */
@@ -219,33 +186,17 @@ article {
   max-width: 40rem;
   margin: 0 auto;
   margin-top: 4rem;
-  margin-bottom: 1.6em;
-}
-
-article a {
-  transition: color, background 0.2s ease-in;
-  -moz-transition: color, background 0.2s ease-in;
-  -webkit-transition: color, background 0.2s ease-in;
-}
-
-article a:hover {
-  background: $grey;
+  margin-bottom: 1.5em;
 }
 
 article h1 a {
-  color: $magenta;
-  background: white;
-}
-
-article h1 a:hover {
-  color: $magenta;
-  background: $grey;
+  text-decoration: none;
 }
 
 footer {
   margin-top:3.2em;
-  padding-top:1.6em;
-  padding-bottom:1.6em;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
   border-top:1px solid #ccc;
   background: #eee;
   width:100%;
@@ -253,13 +204,11 @@ footer {
 }
 
 footer a {color: $magenta; border:2px #eee dotted;
-  -moz-transition:border 0.3s ease-in;
-  -webkit-transition:border 0.3s ease-in;
-  font-weight:bold}
-footer a:hover {
-  border-bottom:2px $magenta dotted;
+  text-decoration: none;
+  -moz-transition: border 0.3s ease-in;
+  -webkit-transition: border 0.3s ease-in;
+  font-weight: bold
 }
-
 
 .meta { float:left}
 
@@ -294,5 +243,5 @@ a.thumb:hover>img {
 
 .small {
   font-size: 0.8rem;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
