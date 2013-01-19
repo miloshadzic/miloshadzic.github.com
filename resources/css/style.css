@@ -78,7 +78,7 @@ h2, h3 {
   margin-bottom: 0.75em; }
 
 .m, .mono, pre, code {
-  font-family: Menlo, Monaco, DejaVu Sans Mono, monospace;
+  font-family: Menlo, Monaco, DejaVu Sans Mono, Consolas, monospace;
   margin-bottom: 1.5em;
   overflow: auto; }
 
