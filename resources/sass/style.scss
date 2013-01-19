@@ -3,7 +3,7 @@ $lightertext: #222;
 $lighttext: #555;
 $background: white;
 $grey: #f6f6f5;
-$lightgrey: #fcfcfb;
+$lightgrey: #fcfcfc;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -103,9 +103,6 @@ h2, h3 {
 pre, code {
     font-size: 0.95rem;
     line-height: 1.5rem;
-    margin-left: -1rem;
-    padding-left: 0.6rem;
-    border-left: 0.4rem solid #eee;
 }
 
 hr {
