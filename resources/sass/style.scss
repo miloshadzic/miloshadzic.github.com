@@ -130,8 +130,12 @@ ol {
 }
 
 ul {
-    list-style:circle;
+    list-style: no;
     list-style-position:inside;
+}
+
+ul li:before {
+    content: "+ ";
 }
 
 li {

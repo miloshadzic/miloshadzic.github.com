@@ -108,8 +108,11 @@ ol {
   list-style: decimal inside; }
 
 ul {
-  list-style: circle;
+  list-style: no;
   list-style-position: inside; }
+
+ul li:before {
+  content: "+ "; }
 
 li {
   line-height: 1.5em; }
