@@ -1,5 +1,5 @@
 $text: #222;
-$lightertext: #333;
+$lightertext: #222;
 $lighttext: #555;
 $background: white;
 $grey: #f6f6f5;
@@ -33,12 +33,11 @@ body {
     background: $background;
     font-size: 125%;
     line-height: 1.5em;
-    font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2","serif";
+    font-family: "freight-sans-pro-1", "freight-sans-pro-2", sans-serif;
     color: $text;
     hyphens: auto;
     border-top: 0.2rem $text solid;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
 }
 ol, ul {
     list-style: none;
@@ -52,13 +51,13 @@ q:before, q:after {
     content: none;
 }
 ::-moz-selection {
-  color:white;
-  background: $text;
+    color:white;
+    background: $text;
 }
 
 ::selection {
-  color: white;
-  background: $text;
+    color: white;
+    background: $text;
 }
 
 table {
@@ -70,132 +69,133 @@ table {
 /* Typography */
 
 em {
-  font-style:italic;
+    font-style:italic;
 }
 
 p {
-  margin-bottom:1.5em;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+    margin-bottom:1.5em;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 h1 {
-  color: $lightertext;
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 3rem;
-  margin-bottom: 0.75rem;
+    -webkit-font-smoothing: antialiased;
+    color: $lightertext;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 0.75rem;
 }
 
 h2, h3 {
-  font-size: 1rem;
-  margin-top: -0.75em;
-  margin-bottom: 0.75em;
+    font-size: 1rem;
+    margin-top: -0.75em;
+    margin-bottom: 0.75em;
 }
 
 .m, .mono, pre, code {
-  font-family: Menlo, Monaco, DejaVu Sans Mono, monospace;
-  margin-bottom: 1.5em;
-  overflow:auto;
+    font-family: Menlo, Monaco, DejaVu Sans Mono, monospace;
+    margin-bottom: 1.5em;
+    overflow: auto;
 }
 
 pre, code {
-  font-size: 0.90rem;
-  line-height: 1.5rem;
-  margin-left: -1rem;
-  padding-left: 0.6rem;
-  border-left: 0.4rem solid #eee;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-left: -1rem;
+    padding-left: 0.6rem;
+    border-left: 0.4rem solid #eee;
 }
 
 hr {
-  margin-top: 3.2rem;
-  margin-bottom: 1.5rem;
-  border: 0;
-  border-bottom: 2px #eee solid;
-  width: 20rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-bottom: 2px #eee solid;
+    width: 20rem;
 }
 
 time {
-  font-size: 0.95rem;
-  color: $lighttext;
-  font-style:italic;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: $lighttext;
+    font-style:italic;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 ul, ol {
-  margin-bottom:1.5em;
+    margin-bottom:1.5em;
 }
 
 ol {
-  list-style: decimal inside;
+    list-style: decimal inside;
 }
 
 ul {
-  list-style:circle;
-  list-style-position:inside;
+    list-style:circle;
+    list-style-position:inside;
 }
 
 li {
-  line-height:1.5em;
+    line-height:1.5em;
 }
 
 a {
-  color: inherit;
-  padding:0em 0.1em;
-  margin:0em -0.1em;
+    color: inherit;
+    padding:0em 0.1em;
+    margin:0em -0.1em;
 }
 
 a:hover {
-  color: black;
+    color: black;
 }
 
 
 header {
-  max-width: 30rem;
-  margin: 0 auto;
-  margin-top: 3rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 header h1 a {
-  font-weight: normal;
-  text-decoration: none;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 header p {
-  font-size: 0.95rem;
+    font-size: 0.95rem;
 }
 
 /* Blog post list */
 .postlist {margin:1em 0 0 2em; float:left}
 
 .meta p {
-  font-size:2.4em;
-  font-weight:300;
-  line-height: 2em;
-  margin-bottom: 16px;
+    font-size:2.4em;
+    font-weight:300;
+    line-height: 2em;
+    margin-bottom: 16px;
 }
 
 article {
-  max-width: 40rem;
-  margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 1.5em;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 1.5em;
 }
 
 article h1 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 footer {
     margin-top:3.2em;
     padding-top:1.5em;
     padding-bottom:1.5em;
-    border-top:1px solid #ccc;
+    border-top: 1px solid $lightgrey;
     background: $grey;
-    width:100%;
-    text-align:center;
+    width: 100%;
+    text-align: center;
 }
 
 footer a {
@@ -205,8 +205,6 @@ footer a {
     -moz-transition: border 0.3s ease-in;
     -webkit-transition: border 0.3s ease-in;
 }
-
-.meta { float:left}
 
 a>img {
     transition: border-color 0.3s ease-in;
@@ -230,14 +228,8 @@ a.thumb>img {
     margin-right:auto;
     display:block;
 }
-a.thumb:hover>img {
-}
-
-.bookimg {
-    margin:0;
-}
 
 .small {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     line-height: 1.5em;
 }

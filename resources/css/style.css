@@ -26,12 +26,11 @@ body {
   background: white;
   font-size: 125%;
   line-height: 1.5em;
-  font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2","serif";
+  font-family: "freight-sans-pro-1", "freight-sans-pro-2", sans-serif;
   color: #222222;
   hyphens: auto;
   border-top: 0.2rem #222222 solid;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
+  text-rendering: optimizeLegibility; }
 
 ol, ul {
   list-style: none; }
@@ -67,8 +66,9 @@ p {
   hyphens: auto; }
 
 h1 {
-  color: #333333;
-  font-size: 2.5rem;
+  -webkit-font-smoothing: antialiased;
+  color: #222222;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 3rem;
   margin-bottom: 0.75rem; }
@@ -84,7 +84,7 @@ h2, h3 {
   overflow: auto; }
 
 pre, code {
-  font-size: 0.90rem;
+  font-size: 0.95rem;
   line-height: 1.5rem;
   margin-left: -1rem;
   padding-left: 0.6rem;
@@ -161,20 +161,17 @@ footer {
   margin-top: 3.2em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #fcfcfb;
   background: #f6f6f5;
   width: 100%;
   text-align: center; }
 
 footer a {
-  color: #333333;
+  color: #222222;
   font-weight: bold;
   text-decoration: none;
   -moz-transition: border 0.3s ease-in;
   -webkit-transition: border 0.3s ease-in; }
-
-.meta {
-  float: left; }
 
 a > img {
   transition: border-color 0.3s ease-in;
@@ -201,9 +198,6 @@ a.thumb > img {
   margin-right: auto;
   display: block; }
 
-.bookimg {
-  margin: 0; }
-
 .small {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   line-height: 1.5em; }
