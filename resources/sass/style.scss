@@ -1,14 +1,9 @@
-$text: #333;
-$lightertext: #444;
-$lighttext: #666;
+$text: #222;
+$lightertext: #333;
+$lighttext: #555;
 $background: white;
-$blue: #1693a7;
 $grey: #f6f6f5;
 $lightgrey: #fcfcfb;
-$orange: #FF9500;
-$magenta: #333;
-$light_magenta: #F25A7D;
-$light_magenta: $magenta;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -194,54 +189,55 @@ article h1 a {
 }
 
 footer {
-  margin-top:3.2em;
-  padding-top:1.5em;
-  padding-bottom:1.5em;
-  border-top:1px solid #ccc;
-  background: #eee;
-  width:100%;
-  text-align:center
+    margin-top:3.2em;
+    padding-top:1.5em;
+    padding-bottom:1.5em;
+    border-top:1px solid #ccc;
+    background: $grey;
+    width:100%;
+    text-align:center;
 }
 
-footer a {color: $magenta; border:2px #eee dotted;
-  text-decoration: none;
-  -moz-transition: border 0.3s ease-in;
-  -webkit-transition: border 0.3s ease-in;
-  font-weight: bold
+footer a {
+    color: $lightertext;
+    font-weight: bold;
+    text-decoration: none;
+    -moz-transition: border 0.3s ease-in;
+    -webkit-transition: border 0.3s ease-in;
 }
 
 .meta { float:left}
 
 a>img {
-  transition: border-color 0.3s ease-in;
-  -moz-transition: border-color 0.3s ease-in;
-  -webkit-transition: border-color 0.3s ease-in;
-  margin: -0.5em;
-  border: 0.5em solid white;
+    transition: border-color 0.3s ease-in;
+    -moz-transition: border-color 0.3s ease-in;
+    -webkit-transition: border-color 0.3s ease-in;
+    margin: -0.5em;
+    border: 0.5em solid white;
 }
 a>img:hover {
-  margin: -0.5em;
-  border: 0.5em solid $grey;
+    margin: -0.5em;
+    border: 0.5em solid $grey;
 }
 
 /* Thumbnail image styling */
 .thumb {border:none;}
 a.thumb:hover {border:none}
 a.thumb>img {
-  margin-top:-12px;
-  margin-bottom:12px;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
+    margin-top:-12px;
+    margin-bottom:12px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
 }
 a.thumb:hover>img {
 }
 
 .bookimg {
-  margin:0;
+    margin:0;
 }
 
 .small {
-  font-size: 0.8rem;
-  line-height: 1.5em;
+    font-size: 0.8rem;
+    line-height: 1.5em;
 }
