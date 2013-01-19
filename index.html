@@ -12,8 +12,7 @@ title: Home
       {{ post.content }}
     </section>
     <time datetime='{{ post.date }}' pubdate itemprop="datePublished">Posted on {{ post.date | date: "%B %d,  %Y" }}.</time>
-    <link type="text/plain" rel="author" value="Miloš Hadžić"
-          href="http://miloshadzic.com" />
+    <meta itemprop="author" content="Miloš Hadžić" />
   </article>
   {% unless forloop.last %}
     <hr />
