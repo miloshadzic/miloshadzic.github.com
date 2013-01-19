@@ -2,14 +2,17 @@
 layout: centered
 ---
 
-<article>
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-  <p>
-    <time datetime='{{ page.date }}' pubdate>Posted on {{ page.date | date: "%B %d,  %Y" }}.</time>
-  </p>
+<article itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  <h1>
+    <a href="{{ page.url }}" itemprop="name headline">{{ page.title }}</a>
+  </h1>
+  <section itemprop="articleBody text">
+    {{ content }}
+  </section>
   <p>
     <a class="liked" href="http://miloshadzic.com">Check out my other
-    posts →</a>
+      posts →</a>
   </p>
+  <time datetime='{{ page.date }}' pubdate itemprop="datePublished">Posted on {{ page.date | date: "%B %d,  %Y" }}.</time>
+  <meta itemprop="author" content="Miloš Hadžić" />
 </article>
