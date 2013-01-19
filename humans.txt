@@ -1,9 +1,4 @@
 /* TEAM */
-  Myself: Miloš Hadžić
-  Site: http://miloshadzic.com
-  Twitter: miloshadzic
+  Maker: Miloš Hadžić
+  Twitter: @miloshadzic
   Location: Belgrade, Serbia.
-
-/* SITE */
-  Components: Hyphenator
-  Software: Ruby, Jekyll, Sass
