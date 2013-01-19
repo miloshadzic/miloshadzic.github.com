@@ -13,7 +13,7 @@ title: Home
     </section>
     <time datetime='{{ post.date }}' pubdate itemprop="datePublished">Posted on {{ post.date | date: "%B %d,  %Y" }}.</time>
     <meta itemprop="author" content="Miloš Hadžić" />
-    <meta itemprop="url" content="{{ site.host }}{{ post.url }}" />
+    <meta itemprop="url" content="http://{{ site.host }}{{ post.url }}" />
   </article>
   {% unless forloop.last %}
     <hr />
