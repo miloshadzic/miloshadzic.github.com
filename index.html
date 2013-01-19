@@ -5,8 +5,12 @@ title: Home
 
 {% for post in site.posts %}
   <article itemscope itemtype="http://schema.org/BlogPosting">
-    <h1><a href="{{ post.url }}" itemprop="name">{{ post.title }}</a></h1>
-    {{ post.content }}
+    <h1>
+      <a href="{{ post.url }}" itemprop="name headline">{{ post.title }}</a>
+    </h1>
+    <section itemprop="articleBody text">
+      {{ post.content }}
+    </section>
     <time datetime='{{ post.date }}' pubdate>Posted on {{ post.date | date: "%B %d,  %Y" }}.</time>
   </article>
   {% unless forloop.last %}
