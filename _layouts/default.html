@@ -42,7 +42,9 @@ sitetitle: Miloš Hadžić
   <body>
     <div id="main">
       {% include header.html %}
-      {{ content }}
+      <section itemscope itemtype="http://schema.org/Blog">
+        {{ content }}
+      </section>
       {% include footer.html %}
     </div>
   </body>
