@@ -29,7 +29,6 @@ body {
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", sans-serif;
   color: #222222;
   hyphens: auto;
-  border-top: 0.2rem #222222 solid;
   text-rendering: optimizeLegibility; }
 
 ol, ul {
@@ -96,7 +95,7 @@ hr {
 
 time {
   font-size: 0.95rem;
-  color: #555555;
+  color: #666666;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
@@ -173,6 +172,10 @@ footer a {
   -moz-transition: border 0.3s ease-in;
   -webkit-transition: border 0.3s ease-in; }
 
+footer small {
+  color: #666666;
+  font-weight: bold; }
+
 a > img {
   transition: border-color 0.3s ease-in;
   -moz-transition: border-color 0.3s ease-in;
@@ -198,6 +201,6 @@ a.thumb > img {
   margin-right: auto;
   display: block; }
 
-.small {
+small {
   font-size: 0.95rem;
   line-height: 1.5em; }

@@ -1,6 +1,6 @@
 $text: #222;
 $lightertext: #222;
-$lighttext: #555;
+$lighttext: #666;
 $background: white;
 $grey: #f6f6f5;
 $lightgrey: #fcfcfc;
@@ -36,7 +36,6 @@ body {
     font-family: "freight-sans-pro-1", "freight-sans-pro-2", sans-serif;
     color: $text;
     hyphens: auto;
-    border-top: 0.2rem $text solid;
     text-rendering: optimizeLegibility;
 }
 ol, ul {
@@ -207,6 +206,11 @@ footer a {
     -webkit-transition: border 0.3s ease-in;
 }
 
+footer small {
+    color: $lighttext;
+    font-weight: bold;
+}
+
 a>img {
     transition: border-color 0.3s ease-in;
     -moz-transition: border-color 0.3s ease-in;
@@ -230,7 +234,7 @@ a.thumb>img {
     display:block;
 }
 
-.small {
+small {
     font-size: 0.95rem;
     line-height: 1.5em;
 }
