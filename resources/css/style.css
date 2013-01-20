@@ -127,6 +127,7 @@ header {
   margin-top: 3rem; }
 
 header h1 a {
+  line-height: 3rem;
   font-weight: normal;
   text-decoration: none; }
 
