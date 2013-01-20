@@ -8,10 +8,10 @@ title: Home
     <h1>
       <a href="{{ post.url }}" itemprop="name headline">{{ post.title }}</a>
     </h1>
+    <time datetime='{{ post.date }}' pubdate itemprop="datePublished">{{ post.date | date: "%B %d,  %Y" }}</time>
     <section itemprop="articleBody text">
       {{ post.content }}
     </section>
-    <time datetime='{{ post.date }}' pubdate itemprop="datePublished">Posted on {{ post.date | date: "%B %d,  %Y" }}.</time>
     <meta itemprop="author" content="Miloš Hadžić" />
     <meta itemprop="url" content="http://{{ site.host }}{{ post.url }}" />
   </article>

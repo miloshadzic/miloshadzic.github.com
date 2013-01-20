@@ -6,6 +6,7 @@ layout: centered
   <h1>
     <a href="{{ page.url }}" itemprop="name headline">{{ page.title }}</a>
   </h1>
+  <time datetime='{{ page.date }}' pubdate itemprop="datePublished">{{ page.date | date: "%B %d,  %Y" }}</time>
   <section itemprop="articleBody text">
     {{ content }}
   </section>
@@ -13,7 +14,6 @@ layout: centered
     <a class="liked" href="http://miloshadzic.com">Check out my other
       posts →</a>
   </p>
-  <time datetime='{{ page.date }}' pubdate itemprop="datePublished">Posted on {{ page.date | date: "%B %d,  %Y" }}.</time>
   <meta itemprop="author" content="Miloš Hadžić" />
   <meta itemprop="url" content="http://{{ site.host }}{{ page.url }}" />
 </article>

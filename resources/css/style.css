@@ -69,8 +69,8 @@ h1 {
   color: #222222;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 3rem;
-  margin-bottom: 0.75rem; }
+  line-height: 1.5rem;
+  margin-bottom: 0rem; }
 
 h2, h3 {
   font-size: 1rem;
@@ -95,10 +95,7 @@ hr {
 
 time {
   font-size: 0.95rem;
-  color: #666666;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem; }
+  color: #666666; }
 
 ul, ol {
   margin-bottom: 1.5em; }
