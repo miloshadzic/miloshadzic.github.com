@@ -4,18 +4,20 @@ title: Home
 ---
 
 {% for post in site.posts %}
-  <article itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-    <h1>
-      <a href="{{ post.url }}" itemprop="name headline">{{ post.title }}</a>
-    </h1>
-    <time datetime='{{ post.date }}' pubdate itemprop="datePublished">{{ post.date | date: "%B %d,  %Y" }}</time>
-    <section itemprop="articleBody text">
-      {{ post.content }}
-    </section>
-    <meta itemprop="author" content="Miloš Hadžić" />
-    <meta itemprop="url" content="http://{{ site.host }}{{ post.url }}" />
-  </article>
-  {% unless forloop.last %}
-    <hr />
+  {% unless post.draft %}
+    <article itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+      <h1>
+        <a href="{{ post.url }}" itemprop="name headline">{{ post.title }}</a>
+      </h1>
+      <time datetime='{{ post.date }}' pubdate itemprop="datePublished">{{ post.date | date: "%B %d,  %Y" }}</time>
+      <section itemprop="articleBody text">
+        {{ post.content }}
+      </section>
+      <meta itemprop="author" content="Miloš Hadžić" />
+      <meta itemprop="url" content="http://{{ site.host }}{{ post.url }}" />
+    </article>
+    {% unless forloop.last %}
+      <hr />
+    {% endunless %}
   {% endunless %}
 {% endfor %}
