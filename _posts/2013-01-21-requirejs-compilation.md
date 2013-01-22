@@ -55,8 +55,6 @@ are incompatible with [out][out] aka compiling to a single file so
 don't use those.
 
 ```javascript
-  optimize: 'uglify2',
-
   name: 'libs/almond',
   include: ['main'],
   wrap: true,
