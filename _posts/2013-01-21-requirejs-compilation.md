@@ -1,7 +1,8 @@
 ---
 title: Compile a RequireJS Project to a Single File
 layout: post
-draft: true
+date: 2013-1-23
+draft: false
 ---
 
 Splitting all your code into modules and loading them with RequireJS
