@@ -109,7 +109,7 @@ Finally to compile, run:
 r.js -o build.js
 ```
 
-And a your compiled project should be in build/main.js.
+And your compiled project should be in build/main.js.
 
 [stub]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L300
 [paths]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L44
