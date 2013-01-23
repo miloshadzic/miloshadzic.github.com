@@ -17,7 +17,8 @@
     {% endif %}
 
     <!-- OpenGraph tags -->
-    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:title"
+          content="{{ page.title }} | {{ site.title }}" />
     <meta property="og:url"
           content="http://{{ site.host }}{{ page.url }}" />
     <meta property="og:type" content="website" />
@@ -28,7 +29,7 @@
     <meta name="twitter:url"
           content="http://{{ site.host }}{{ page.url }}"/>
     <meta name="twitter:title"
-          content="{{ page.title }} | {{ page.sitetitle }}" />
+          content="{{ page.title }} | {{ site.title }}" />
 
     <link type="text/plain" rel="author" value="Miloš Hadžić"
           href="http://miloshadzic.com" />
