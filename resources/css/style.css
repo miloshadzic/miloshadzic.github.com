@@ -91,7 +91,8 @@ hr {
   margin-bottom: 1.5rem;
   border: 0;
   border-bottom: 2px #eeeeee solid;
-  width: 20rem; }
+  max-width: 20rem;
+  width: 50%; }
 
 time {
   font-size: 0.95rem;
@@ -123,6 +124,7 @@ a:hover {
 
 header {
   max-width: 30rem;
+  width: 75%;
   margin: 0 auto;
   margin-top: 3rem; }
 
@@ -147,6 +149,7 @@ header p {
 
 article {
   max-width: 40rem;
+  width: 90%;
   margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 1.5em; }
@@ -173,6 +176,9 @@ footer a {
 footer small {
   color: #666666;
   font-weight: bold; }
+
+img {
+  max-width: 100%; }
 
 a > img {
   transition: border-color 0.3s ease-in;
