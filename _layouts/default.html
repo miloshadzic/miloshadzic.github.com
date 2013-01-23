@@ -1,7 +1,3 @@
----
-sitetitle: Miloš Hadžić
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,8 +6,14 @@ sitetitle: Miloš Hadžić
 
     {% if page.description %}
       <meta name="description" content="{{ page.description }}" />
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta name="twitter:description"
+            content="{{ page.description }}" />
     {% else %}
       <meta name="description" content="{{ site.description }}" />
+      <meta property="og:description" content="{{ site.description }}" />
+      <meta name="twitter:description"
+            content="{{ site.description }}" />
     {% endif %}
 
     <!-- OpenGraph tags -->
@@ -19,7 +21,6 @@ sitetitle: Miloš Hadžić
     <meta property="og:url"
           content="http://{{ site.host }}{{ page.url }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:site_name" content="Miloš Hadžić" />
 
     <!-- Twitter card tags -->
@@ -27,9 +28,7 @@ sitetitle: Miloš Hadžić
     <meta name="twitter:url"
           content="http://{{ site.host }}{{ page.url }}"/>
     <meta name="twitter:title"
-          content="{{ page.title || page.sitetitle }}" />
-    <meta name="twitter:description"
-          content="{{ page.description || site.description }}" />
+          content="{{ page.title }} | {{ page.sitetitle }}" />
 
     <link type="text/plain" rel="author" value="Miloš Hadžić"
           href="http://miloshadzic.com" />
