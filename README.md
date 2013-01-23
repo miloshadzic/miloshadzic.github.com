@@ -1,4 +1,4 @@
-miloshadzic.com
+[miloshadzic.com](http://miloshadzic.com)
 ===============
 
 Personal website and blog. Based mostly on jekyll and scss.
