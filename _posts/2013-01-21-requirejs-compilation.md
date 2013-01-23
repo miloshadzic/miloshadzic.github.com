@@ -3,6 +3,8 @@ title: Compile a RequireJS Project to a Single File
 layout: post
 date: 2013-1-23
 draft: false
+description: Splitting all your JavaScript code into modules and loading them with RequireJS makes for a warm and fuzzy development experience. At some point though, I'd like to deliver a single file with all the dependencies included.
+
 ---
 
 Splitting all your JavaScript code into modules and loading them with
