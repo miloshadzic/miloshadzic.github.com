@@ -7,9 +7,13 @@ sitetitle: Miloš Hadžić
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Miloš Hadžić" />
-    <meta name="description" content="Hi, I'm Miloš Hadžić and I am a
-    programmer from Belgrade, Serbia. I use this blog to write my
-    thoughts on programming." />
+
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+    {% else %}
+      <meta name="description" content="{{ site.description }}" />
+    {% endif %}
+
     <link type="text/plain" rel="author" value="Miloš Hadžić"
           href="http://miloshadzic.com" />
     <link type="text/plain" rel="author" value="Miloš Hadžić on Google+"
@@ -17,16 +21,15 @@ sitetitle: Miloš Hadžić
     <link type="text/plain" rel="author"
           href="/humans.txt" />
 
-    <!-- Syntax highlighting css-->
     <link rel="alternate" type="application/atom+xml" href="/atom.xml"
-    title="miloshadzic.com Atom Feed" />
+          title="miloshadzic.com Atom Feed" />
     <link rel="stylesheet" href="/resources/css/syntax.css"
-    type="text/css" />
+          type="text/css" />
     <link rel="icon" type="image/png" href="/resources/images/favicon.png" />
     <title>{{ page.title }} | {{ page.sitetitle }}</title>
     <!-- Homepage css -->
     <link rel="stylesheet" href="/resources/css/style.css" type="text/css"
-    media="screen, projection" />
+          media="screen, projection" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-20914528-3']);
@@ -37,7 +40,7 @@ sitetitle: Miloš Hadžić
        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
-</script>
+    </script>
   </head>
   <body>
     <div id="main">
@@ -50,11 +53,11 @@ sitetitle: Miloš Hadžić
   </body>
   <script type="text/javascript">
     (function() {
-     var config = {
-kitId: 'ocf8qjp',
-scriptTimeout: 3000
-};
-var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+      var config = {
+      kitId: 'ocf8qjp',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
 })();
-</script>
+  </script>
 </html>

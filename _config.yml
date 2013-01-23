@@ -2,3 +2,5 @@ host: miloshadzic.com
 permalink: pretty
 pygments: true
 markdown: redcarpet
+
+description: Hi, I am Miloš Hadžić and this is my blog where I usually write about programming.
