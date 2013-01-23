@@ -22,6 +22,15 @@ sitetitle: Miloš Hadžić
     <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:site_name" content="Miloš Hadžić" />
 
+    <!-- Twitter card tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url"
+          content="http://{{ site.host }}{{ page.url }}"/>
+    <meta name="twitter:title"
+          content="{{ page.title || page.sitetitle }}" />
+    <meta name="twitter:description"
+          content="{{ page.description }}" />
+
     <link type="text/plain" rel="author" value="Miloš Hadžić"
           href="http://miloshadzic.com" />
     <link type="text/plain" rel="author" value="Miloš Hadžić on Google+"
