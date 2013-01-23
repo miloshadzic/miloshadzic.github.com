@@ -5,12 +5,12 @@ date: 2013-1-23
 draft: false
 ---
 
-Splitting all your code into modules and loading them with RequireJS
-makes for a warm and fuzzy development experience. At some point
-though, I'd like to deliver a single file with all the dependencies
-included. The biggest reason being that HTTP requests are expensive
-and by lazy-loading all your tiny modules, RequireJS makes a lot of
-them.
+Splitting all your JavaScript code into modules and loading them with
+RequireJS makes for a warm and fuzzy development experience. At some
+point though, I'd like to deliver a single file with all the
+dependencies included. The biggest reason being that HTTP requests are
+expensive and by lazy-loading all your tiny modules, RequireJS makes a
+lot of them.
 
 There's an optimizing tool for RequireJS called [r.js][rjs]. You can
 use it to minimize and concatenate your code. The documentation is in
