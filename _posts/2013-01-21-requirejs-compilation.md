@@ -2,7 +2,7 @@
 title: Compile a RequireJS Project to a Single File
 layout: post
 date: 2013-1-23
-draft: true
+draft: false
 ---
 
 Splitting all your code into modules and loading them with RequireJS
@@ -56,21 +56,19 @@ are incompatible with [out][out] aka compiling to a single file so
 don't use those.
 
 ```javascript
-  name: 'libs/almond',
-  include: ['main'],
+  include: ['libs/almond', 'main'],
   wrap: true,
 ```
 
-Usually you would use the [name][name] parameter to specify the name
-of the module you load but we're specifying the almond loader here
-since the goal is to bundle all of our modules and a loader into one
-file. [Almond](http://github.com/jrburke/almond) is a much smaller and
-simpler AMD loader that makes sense in our case since we're not
+Usually, you would use the [name][name] parameter to specify your main
+module but we're using [include][include] here because we're bundling
+the almond loader as well. [Almond][almond] is a much smaller and
+simpler AMD loader that makes sense in our case because we're not
 loading modules dynamically.
 
 The [include][include] parameter is an array specifying which other
-modules to include in the build. We specify the "main" one and r.js
-finds all other dependencies from that.
+modules to include in the build. When we specify the "main" one, r.js
+traces all other modules that main depends on and includes them.
 
 [Wrap][wrap], unsurprisingly wraps module requires into a closure so
 that only what you export gets into the global environment. To be
@@ -111,16 +109,20 @@ r.js -o build.js
 
 And your compiled project should be in build/main.js.
 
-[stub]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L300
-[paths]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L44
-[wrap]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L425
-[include]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L402
-[name]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L401
-[appdir]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L19
-[dir]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L56
-[modules]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L325
-[out]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L404
-[baseurl]: https://github.com/jrburke/r.js/blob/master/build/example.build.js#L25
+*A sincere thank you to [James Burke][jrburke] for reviewing this post.*
+
+[stub]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L300
+[paths]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L44
+[wrap]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L425
+[include]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L402
+[name]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L401
+[appdir]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L19
+[dir]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L56
+[modules]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L325
+[out]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L404
+[baseurl]: https://github.com/jrburke/r.js/blob/84eb9f1a7d/build/example.build.js#L25
 [optimization]: http://requirejs.org/docs/optimization.html
 [example]: https://github.com/jrburke/r.js/blob/master/build/example.build.js
 [rjs]: https://github.com/jrburke/r.js/
+[jrburke]: http://jrburke.com
+[almond]: http://github.com/jrburke/almond
