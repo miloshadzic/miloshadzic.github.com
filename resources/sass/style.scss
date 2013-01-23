@@ -215,6 +215,7 @@ footer small {
 img {
     max-width: 100%;
 }
+
 a>img {
     transition: border-color 0.3s ease-in;
     -moz-transition: border-color 0.3s ease-in;
@@ -222,12 +223,12 @@ a>img {
     margin: -0.5em;
     border: 0.5em solid white;
 }
+
 a>img:hover {
     margin: -0.5em;
     border: 0.5em solid $grey;
 }
 
-/* Thumbnail image styling */
 .thumb {border:none;}
 a.thumb:hover {border:none}
 a.thumb>img {
