@@ -153,12 +153,38 @@ a:hover {
     color: black;
 }
 
-
 header {
     max-width: 30rem;
     width: 75%;
     margin: 0 auto;
     margin-top: 3rem;
+}
+
+header ul {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+header ul li:before {
+    content: "";
+}
+
+header ul li {
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+header ul a {
+    text-decoration: none;
+    padding: 0.1em 0.2em;
+    font-weight: bold;
+    transition: 0.3s background ease;
+    -moz-transition: 0.3s background ease;
+    -webkit-transition: 0.3s background ease;
+}
+
+header ul a:hover {
+    background: $grey;
 }
 
 header h1 a {
@@ -169,6 +195,7 @@ header h1 a {
 
 header p {
     font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 /* Blog post list */
