@@ -1,6 +1,7 @@
-$text: #222;
+$text: #444;
 $lightertext: #222;
 $lighttext: #666;
+$lightesttext: #999;
 $background: white;
 $grey: #f6f6f5;
 $lightgrey: #fcfcfc;
@@ -109,17 +110,18 @@ pre, code {
 }
 
 hr {
-    margin-top: 3.2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
     border: 0;
-    border-bottom: 2px #eee solid;
-    max-width: 20rem;
-    width: 50%;
+    border-bottom: 2px $grey solid;
+    max-width: 90%;
+    width: 20em;
 }
 
 time {
     font-size: 0.95rem;
-    color: $lighttext;
+    font-weight: bold;
+    color: $lightesttext;
 }
 
 ul, ol {
