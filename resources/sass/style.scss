@@ -194,7 +194,7 @@ header ul li {
     display: inline-block;
 }
 
-header ul a {
+header a {
     text-decoration: none;
     padding: 0.1em 0.2em;
     font-weight: bold;
@@ -203,7 +203,7 @@ header ul a {
     -webkit-transition: 0.3s background ease;
 }
 
-header ul a:hover {
+header a:hover {
     background: $grey;
 }
 
