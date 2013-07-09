@@ -1,4 +1,4 @@
-host: miloshadzic.com
+host: 0.0.0.0
 permalink: pretty
 pygments: true
 markdown: redcarpet
@@ -6,3 +6,5 @@ markdown: redcarpet
 title: Miloš Hadžić
 description: Hi, I am Miloš Hadžić and this is my blog where I usually write about programming.
 twitter_username: miloshadzic
+
+domain: miloshadzic.com

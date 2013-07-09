@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     background: $background;
-    font-size: 125%;
+    font-size: 18px;
     line-height: 1.5em;
     font-family: "freight-sans-pro-1", "freight-sans-pro-2", sans-serif;
     color: $text;
@@ -97,9 +97,10 @@ strong, b {
 }
 
 h2, h3 {
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: -0.75em;
     margin-bottom: 0.75em;
+    font-weight: bold;
 }
 
 .m, .mono, pre, code {
@@ -214,7 +215,7 @@ header h1 a {
 }
 
 header p {
-    font-size: 0.95rem;
+    font-size: .8em;
     margin-bottom: 0;
 }
 
