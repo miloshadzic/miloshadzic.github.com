@@ -40,6 +40,8 @@ body {
     line-height: 1.5em;
     font-family: "freight-sans-pro-1", "freight-sans-pro-2", sans-serif;
     color: $text;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto;
     text-rendering: optimizeLegibility;
 }
@@ -78,9 +80,7 @@ em {
 
 p {
     margin-bottom:1.5em;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+
 }
 
 h1 {
@@ -193,6 +193,9 @@ header ul li:before {
 header ul li {
     margin-right: 0.5em;
     display: inline-block;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
 }
 
 header a {
