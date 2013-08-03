@@ -6,6 +6,29 @@ $background: white;
 $grey: #f6f6f5;
 $lightgrey: #fcfcfc;
 
+@font-face {
+    font-family: 'fira_mono_ot';
+    src: url('/resources/fonts/firamonoot-bold-webfont.eot');
+    src: url('/resources/fonts/firamonoot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/resources/fonts/firamonoot-bold-webfont.woff') format('woff'),
+         url('/resources/fonts/firamonoot-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'fira_mono_ot';
+    src: url('/resources/fonts/firamonoot-regular-webfont.eot');
+    src: url('/resources/fonts/firamonoot-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/resources/fonts/firamonoot-regular-webfont.woff') format('woff'),
+         url('/resources/fonts/firamonoot-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -104,13 +127,13 @@ h2, h3 {
 }
 
 .m, .mono, pre, code {
-    font-family: Menlo, Monaco, DejaVu Sans Mono, Consolas, monospace;
+    font-family: 'fira_mono_ot', Menlo, Consolas, monospace;
     margin-bottom: 1.5em;
     overflow: auto;
 }
 
 pre, code {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     line-height: 1.5rem;
 }
 
