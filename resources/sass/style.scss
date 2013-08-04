@@ -17,8 +17,6 @@ $lightgrey: #fcfcfc;
 }
 
 
-
-
 @font-face {
     font-family: 'fira_mono_ot';
     src: url('/resources/fonts/firamonoot-regular-webfont.eot');
@@ -110,7 +108,6 @@ h1 {
     -webkit-font-smoothing: antialiased;
     color: $lightertext;
     font-size: 2rem;
-    font-weight: bold;
     line-height: 1em;
     margin-bottom: 0rem;
 }
@@ -135,6 +132,7 @@ h2, h3 {
 pre, code {
     font-size: 0.90rem;
     line-height: 1.5rem;
+    font-feature-settings: "liga" off;
 }
 
 hr {
@@ -148,7 +146,7 @@ hr {
 
 time {
     font-size: 0.95rem;
-    font-weight: bold;
+    font-weight: 600;
     color: $lightesttext;
 }
 
@@ -265,7 +263,7 @@ article {
 
 article h1 a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 footer {
@@ -293,7 +291,7 @@ footer small {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 a>img {
