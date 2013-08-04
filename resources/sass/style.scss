@@ -92,6 +92,11 @@ table {
     border-spacing: 0;
 }
 
+.centered {
+    max-width: 40rem;
+    width: 90%;
+    margin: 0 auto;
+}
 
 /* Typography */
 
@@ -101,7 +106,10 @@ em {
 
 p {
     margin-bottom:1.5em;
+}
 
+.smcp {
+    font-feature-settings: "smcp" on;
 }
 
 h1 {
@@ -254,9 +262,6 @@ header p {
 }
 
 article {
-    max-width: 40rem;
-    width: 90%;
-    margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 1.5em;
 }
@@ -267,9 +272,6 @@ article h1 a {
 }
 
 footer {
-    margin-top:3.2em;
-    padding-top:1.5em;
-    padding-bottom:1.5em;
     border-top: 1px solid $lightgrey;
     background: $grey;
     width: 100%;
@@ -320,6 +322,22 @@ a.thumb>img {
 small {
     font-size: 0.95rem;
     line-height: 1.5em;
+}
+
+$footer-height: 8em; // Set to however many lines of text you want to have in your footer. Sorry, no dynamic option here.
+html, body { height: 99.8%; }
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto ($footer-height * -1);
+    overflow: hidden;
+}
+#wrap > *:last-child {
+    padding-bottom: $footer-height;
+}
+.sticky {
+    height: $footer-height;
 }
 
 @import "_syntax";
