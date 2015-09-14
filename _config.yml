@@ -1,6 +1,6 @@
 host: 0.0.0.0
 permalink: pretty
-pygments: true
+highlighter: pygments
 markdown: redcarpet
 
 title: Miloš Hadžić
@@ -8,3 +8,5 @@ description: Hi, I am Miloš Hadžić and this is my blog where I usually write 
 twitter_username: miloshadzic
 
 domain: miloshadzic.com
+
+exclude: [vendor]

@@ -1,23 +1,15 @@
----
-layout: centered
-title: Home
----
-
-{% for post in site.posts %}
-  {% unless post.draft %}
-    <article itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-      <h1>
-        <a href="{{ post.url }}" itemprop="name headline">{{ post.title }}</a>
-      </h1>
-      <time datetime='{{ post.date }}' pubdate itemprop="datePublished">{{ post.date | date: "%B %d,  %Y" }}</time>
-      <section itemprop="articleBody text">
-        {{ post.content }}
-      </section>
-      <meta itemprop="author" content="Miloš Hadžić" />
-      <meta itemprop="url" content="http://{{ site.host }}{{ post.url }}" />
-    </article>
-    {% unless forloop.last %}
-      <hr />
-    {% endunless %}
-  {% endunless %}
-{% endfor %}
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Miloš Hadžić</title>
+    <link rel="stylesheet" type="text/css" href="/resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/new-style.css">
+  </head>
+  <body>
+    <p>Hey I'm Miloš. I run <a href="https://rightfold.io">Right Fold</a> — a small web consultancy. If you need help you with your current or upcoming project we're currently accepting new work so it's the right time to reach out.</p>
+    <p>I'm also somewhat involved with underground club music in Belgrade, mostly as a member of the <a href="https://facebook.com/thatmysticfeed">Mystic Stylez</a> collective. We host some pretty good parties. There's a little log of parties I play on <a href='https://ello.co/miloshadzic'>ello</a>.</p>
+    <p>This place used to host my blog but I've barely wrote anything in years. The old links should still work though.</p> 
+    <p>Check out my <a href='https://instagram.com/miloshadzic'>Instagram</a>, <a href='https://twitter.com/miloshadzic'>Twitter</a> and <a href='https://github.com/miloshadzic'>Github</a> for more.</p>
+    <p>Get in touch by <a href="mailto:milos@rightfold.io">email</a>.</p>
+  </body>
+</html>
