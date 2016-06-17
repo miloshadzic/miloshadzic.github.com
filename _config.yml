@@ -1,6 +1,5 @@
 host: 0.0.0.0
 permalink: pretty
-highlighter: pygments
 markdown: redcarpet
 
 title: Miloš Hadžić

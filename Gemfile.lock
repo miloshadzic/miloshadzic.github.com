@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    RedCloth (4.3.2)
     colorator (0.1)
     ffi (1.9.10)
     foreman (0.82.0)
@@ -38,7 +37,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   foreman
   jekyll
   rb-fsevent
